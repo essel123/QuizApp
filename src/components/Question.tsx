@@ -13,50 +13,53 @@ function Question() {
 
   var [selectedIndex, setSlectedIndex] = useState(-1);
 
-
-
   var question = Data.map((obj1, index) => {
     return obj1.questions.map((obj2, index_) => {
       if (index === y) {
         if (index_ === x) {
           return (
             <>
-              <b>{obj1.title}</b>
-              <div className="left">
-                <h1 className="subtitle"> {obj2.question}</h1>
-              </div>
+              <div className="row">
+                <div className="left-side">
+                  <h1 className="question"> {obj2.question}</h1>
+                </div>
 
-              {obj2.options.map((obj3, choice) => {
-                return (
-                  <>
-                    <ul>
-                      <li
-                        key={index}
-                        className={"topic"}
-                        onClick={() => {
-                          setSlectedIndex(index);
-                          if (obj2.answer.match(obj3)) {
-                          } else {
-                          }
-                        }}
-                      >
-                        {" "}
-                        <span>
-                          {choice == 0
-                            ? "A"
-                            : choice === 1
-                            ? "B"
-                            : choice === 2
-                            ? "C"
-                            : "D"}
-                        </span>{" "}
-                        <p> {obj3}</p>
-                        <img className="icon" src={im} />
-                      </li>
-                    </ul>
-                  </>
-                );
-              })}
+                <div className="right-side">
+                  {obj2.options.map((obj3, choice) => {
+                    return (
+                      <>
+                        <ul>
+                          <li
+                            key={index}
+                            className={"choice"}
+                            onClick={() => {
+                              setSlectedIndex(index);
+                              if (obj2.answer.match(obj3)) {
+                                alert("correct you gave");
+                              } else {
+                                alert("wrong answer provided");
+                              }
+                            }}
+                          >
+                            {" "}
+                            <span>
+                              {choice == 0
+                                ? "A"
+                                : choice === 1
+                                ? "B"
+                                : choice === 2
+                                ? "C"
+                                : "D"}
+                            </span>{" "}
+                            <p> {obj3}</p>
+                            <img className="icon" src={im} />
+                          </li>
+                        </ul>
+                      </>
+                    );
+                  })}
+                </div>
+              </div>
             </>
           );
         }
@@ -66,35 +69,23 @@ function Question() {
 
   return (
     <>
-      <div className="container">
-        <div className="row_">
-          <div className="right">
-            <div className="right">
-              {question}
-              <div className="error">
-                <li style={{ listStyleType: "none" }}>
-                  {" "}
-                  <p id="error"></p>
-                </li>
-              </div>
-              <button
-                onClick={() => {
-                  setx((x) => x + 1);
-                  if (x === 9) {
-                    setx(0);
-                    sety((y) => y + 1);
-                    if (y >= 3) {
-                      sety(0);
-                    }
-                  }
-                }}
-                className="subbtn"
-              >
-                Question {x + 1} y {y}
-              </button>
-            </div>
-          </div>
-        </div>
+      <div className="body">
+        {question}
+        <button
+          onClick={() => {
+            setx((x) => x + 1);
+            if (x === 9) {
+              setx(0);
+              sety((y) => y + 1);
+              if (y >= 3) {
+                sety(0);
+              }
+            }
+          }}
+          className="subbtn"
+        >
+          Question {x + 1} y {y}
+        </button>
       </div>
     </>
   );
