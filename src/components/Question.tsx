@@ -4,7 +4,6 @@ import "../assets/icon-css.svg";
 import im from "../assets/icon-correct.svg";
 import "./answerCheck.css";
 import { useState } from "react";
-import Home from "./Home";
 
 function Question() {
   var Data = data.quizzes;
