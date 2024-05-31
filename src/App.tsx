@@ -1,10 +1,11 @@
-import Home from "./components/Home";
+import Question from "./components/Question";
 
-function App()
-{
-
-  return <><Home/></>;
-
+function App() {
+  return (
+    <>
+      <Question />
+    </>
+  );
 }
 
 export default App;

@@ -8,6 +8,9 @@
     width: 56px;
     background: #F4F6FA;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
   }
   

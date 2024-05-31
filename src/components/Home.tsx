@@ -13,20 +13,39 @@ import "../index.css";
 // {
 
 function Home() {
-  var topics = [["HTML"], ["CSS"], ["Javascript"], ["Accessibility"]];
-  var myimage = "./assets/icon-html.svg";
+  var topics = ["HTML", "CSS", "Javascript", "Accessibility"];
+  // var myimages = [
+  //   "./src/assets/icon-html.svg",
+  //   "./src/assets/icon-css.svg",
+  //   "./src/assets/icon-js.svg",
+  //   ,
+  //   "./src/assets/icon-accessibility.svg"
+  // ];
+ var im = "./src/assets/icon-accessibility.svg";
+
+  // const listItem = topics.map((myimages) => (
+  //   <li className="topic">
+  //     <span>
+      
+  //     </span>
+     
+  //   </li>
+  // ));
 
   const listItems = topics.map((topic) => (
     <li className="topic">
       <span>
-        <img src={myimage} alt="" />
+        <img src={im} alt="" />
       </span>
-      <h3> {topic}</h3>
+      <h3> {topic} </h3>
     </li>
   ));
 
   return (
     <>
+  
+    
+
       <div className="container">
         <div className="row_">
           <div className="left">
