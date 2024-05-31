@@ -1,51 +1,41 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../assets/icon-accessibility.svg";
-import "../assets/icon-css.svg";
-import "../assets/icon-html.svg";
-import "../assets/icon-js.svg";
-
-
 import "../index.css";
-// import { useState } from "react";
-
-// var topic = 0;
-// var data =
-// {
+import "./answerCheck.css"
+import data from "../assets/data.json";
 
 function Home() {
-  var topics = ["HTML", "CSS", "Javascript", "Accessibility"];
-  // var myimages = [
-  //   "./src/assets/icon-html.svg",
-  //   "./src/assets/icon-css.svg",
-  //   "./src/assets/icon-js.svg",
-  //   ,
-  //   "./src/assets/icon-accessibility.svg"
-  // ];
- var im = "./src/assets/icon-accessibility.svg";
-
-  // const listItem = topics.map((myimages) => (
-  //   <li className="topic">
-  //     <span>
-      
-  //     </span>
-     
-  //   </li>
-  // ));
-
-  const listItems = topics.map((topic) => (
-    <li className="topic">
-      <span>
-        <img src={im} alt="" />
-      </span>
-      <h3> {topic} </h3>
-    </li>
-  ));
+  const quiztypes = data.quizzes.map((obj, index) => {
+    return (
+      <li
+        key={index}
+        className="topic"
+        onClick={() => {
+          if (index === 0) {
+            console.log(index);
+            alert("you clicked html quiz");
+          } else if (index === 1) {
+            console.log(index);
+            alert("you clicked css quiz");
+          } else if (index === 2) {
+            console.log(index);
+            alert("you clicked javascript quiz");
+          } else {
+            console.log(index);
+            alert("you clicked accessibilty quiz");
+            console.log();
+          }
+        }}
+      >
+        <span>
+          <img key={index} src={obj.icon} alt="i" />
+        </span>
+        <h3> {obj.title}</h3>
+      </li>
+    );
+  });
 
   return (
     <>
-  
-    
-
       <div className="container">
         <div className="row_">
           <div className="left">
@@ -55,7 +45,7 @@ function Home() {
             <p className="subject"> Pick a subject to get started.</p>
           </div>
           <div className="right">
-            <ul>{listItems}</ul>
+            <ul>{quiztypes}</ul>
           </div>
         </div>
       </div>

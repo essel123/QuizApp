@@ -1,0 +1,64 @@
+
+// var list = data.quizzes.map((myobj) => {
+//   return (
+//     <li className="topic">
+//       <span>
+//         <img src={"../assets/icon-css.svg"} alt="lll" />
+//       </span>
+//       <p>
+//         <b>Title</b>
+//         {myobj.title}
+//       </p>
+//       <br />
+//       <p>
+//         <b>Icon</b>
+//         {myobj.icon}
+//       </p>
+//       <br />
+//       <p>
+//         <b>Questions</b>
+//         {myobj.questions.map((ques, index) => {
+//           return (
+//             <ul>
+//               <li>
+//                 {index + 1} {ques.question}
+//               </li>
+//             </ul>
+//           );
+//         })}
+//       </p>
+//       <br />
+//       <p>
+//         <b>Options</b>
+//         {myobj.questions.map((ops) => {
+//           return ops.options.map((ind, index) => {
+//             return (
+//               <li>
+//                 {index === 0
+//                   ? "A"
+//                   : index === 1
+//                   ? "B"
+//                   : index === 2
+//                   ? "C"
+//                   : "D"}{" "}
+//                 {ind}
+//               </li>
+//             );
+//           });
+//         })}
+//       </p>
+//       <br />
+//       <p>
+//         <b>Answers</b>
+
+//         {myobj.questions.map((ans, index) => {
+//           return (
+//             <li>
+//               {index + 1} {ans.answer}
+//             </li>
+//           );
+//         })}
+//       </p>
+//     </li>
+//   );
+// });

@@ -21,14 +21,14 @@ body{
 @media (min-width:1024px) {
     .innerpage {
             position: relative;
-            top: 20%;
+            top: 15%;
             left: auto;
     
         }
         
     
     .page {
-            background-image: url("/public/pattern-background-desktop-light.svg");
+            background-image: url("../public/pattern-background-desktop-light.svg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -55,8 +55,10 @@ body{
 
     .page {
         background-image: url("/public/pattern-background-mobile-light.svg");
-        background-position: center;
-        background-repeat: no-repeat;
+    
+        background-position:center;
+        
+       
         background-size: cover;
         height: 50vh;
        
