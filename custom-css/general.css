@@ -2,10 +2,7 @@
 {
     margin: 0;
     padding: 0;
-
-    color: #313E51;
-    
-       
+ 
     
     
   
@@ -21,8 +18,8 @@ body{
 @media (min-width:1024px) {
     .innerpage {
             position: relative;
-            top: 15%;
-            left: auto;
+            top: 5%;
+         
     
         }
         

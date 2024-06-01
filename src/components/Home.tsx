@@ -36,7 +36,7 @@ function Home() {
 
   return (
     <>
-      <div className="container">
+      <div className="container ">
         <div className="row_">
           <div className="left">
             <h1 className="title"> Welcome to the</h1>

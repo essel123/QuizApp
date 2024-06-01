@@ -1,10 +1,11 @@
+import Home from "./components/Home";
 import Question from "./components/Question";
 
 
 function App() {
   return (
     <>
-      <Question />
+      <Home />
     
     </>
   );

@@ -11,17 +11,28 @@ function Question() {
   var [x, setx] = useState(0);
   var [y, sety] = useState(0);
 
+  var imm = [
+
+  ];
+
   var [selectedIndex, setSlectedIndex] = useState(-1);
 
   var question = Data.map((obj1, index) => {
     return obj1.questions.map((obj2, index_) => {
       if (index === y) {
         if (index_ === x) {
+          var imsrc = "";
           return (
             <>
-              <div className="row">
+              <div className="question-body">
                 <div className="left-side">
-                  <h1 className="question"> {obj2.question}</h1>
+                  <p className="current-number">
+                    <ul>
+                      <h1>{obj1.title}</h1>
+                    </ul>
+                    Question {x + 1} of {obj1.questions.length}
+                  </p>
+                  <h2 className="Question"> {obj2.question}</h2>
                 </div>
 
                 <div className="right-side">
@@ -35,9 +46,8 @@ function Question() {
                             onClick={() => {
                               setSlectedIndex(index);
                               if (obj2.answer.match(obj3)) {
-                                alert("correct you gave");
+                                imsrc = im;
                               } else {
-                                alert("wrong answer provided");
                               }
                             }}
                           >
@@ -51,13 +61,28 @@ function Question() {
                                 ? "C"
                                 : "D"}
                             </span>{" "}
-                            <p> {obj3}</p>
-                            <img className="icon" src={im} />
+                            <h2> {obj3}</h2>
+                            <img className="icon" src={imsrc} />
                           </li>
                         </ul>
                       </>
                     );
                   })}
+                  <button
+                    onClick={() => {
+                      setx((x) => x + 1);
+                      if (x === 9) {
+                        setx(0);
+                        sety((y) => y + 1);
+                        if (y >= 3) {
+                          sety(0);
+                        }
+                      }
+                    }}
+                    className="subbtn"
+                  >
+                    Submit Answer {x + 1} y {y}
+                  </button>
                 </div>
               </div>
             </>
@@ -71,21 +96,7 @@ function Question() {
     <>
       <div className="body">
         {question}
-        <button
-          onClick={() => {
-            setx((x) => x + 1);
-            if (x === 9) {
-              setx(0);
-              sety((y) => y + 1);
-              if (y >= 3) {
-                sety(0);
-              }
-            }
-          }}
-          className="subbtn"
-        >
-          Question {x + 1} y {y}
-        </button>
+        
       </div>
     </>
   );
