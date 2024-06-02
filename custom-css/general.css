@@ -2,10 +2,7 @@
 {
     margin: 0;
     padding: 0;
-
-    color: #313E51;
-    
-       
+ 
     
     
   
@@ -21,14 +18,14 @@ body{
 @media (min-width:1024px) {
     .innerpage {
             position: relative;
-            top: 20%;
-            left: auto;
+            top: 5%;
+         
     
         }
         
     
     .page {
-            background-image: url("/public/pattern-background-desktop-light.svg");
+            background-image: url("../public/pattern-background-desktop-light.svg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -55,8 +52,10 @@ body{
 
     .page {
         background-image: url("/public/pattern-background-mobile-light.svg");
-        background-position: center;
-        background-repeat: no-repeat;
+    
+        background-position:center;
+        
+       
         background-size: cover;
         height: 50vh;
        
