@@ -6,7 +6,7 @@
   {
    
    
-    float: right;
+    
 
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@
   .middle
   {
     width: 48px;
-    height: 28px;
+    height: 24px;
     background: #A729F5;
     border-radius: 999px;
     cursor: pointer;
@@ -40,15 +40,17 @@
     align-items: center;
     justify-content: left;
     padding: 5px;
+    cursor: pointer;
     
   }
 
   .circle
   {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background: #ffffff;
     border-radius: 360px;
+    cursor: pointer;
   }
 
   ul .topic span{
@@ -62,7 +64,7 @@
     
   }
   
-ul .topic h3{
+ul .topic  h3{
   margin-left: 32px;
 }
 
@@ -103,10 +105,14 @@ ul .topic {
   
     .left {
       float: left;
+      
+      
+     
     }
   
     .right {
-      float: left;
+      float: right;
+      margin-left: 5rem;
     }
   .title {
       font-size: 56px;
@@ -123,7 +129,7 @@ ul .topic {
 
     .subject
     {
-      font-size: 12px;
+      font-size: 16px;
       font-style: italic;
       line-height: 150%;
       margin-top: 24px;
@@ -133,15 +139,15 @@ ul .topic {
 
         ul .topic {
     
-          height: 80px;
-          width: 596px;
+          height: 50px;
+          width: 550px;
           
         }
 
     
 }
 
-@media (max-width:1023px) {
+@media (max-width:1024px) {
   .container {
     display: flex;
     flex-direction: row;
@@ -158,19 +164,19 @@ ul .topic {
      ul .topic {
   
        height: 80px;
-       width: 450px;
+       width: 400px;
   
      }
 
   
   .title {
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 100;
     line-height: 100%;
   }
 
   .subtitle {
-    font-size: 64px;
+    font-size: 56px;
     font-weight: bold;
     line-height: 100%;
   }
@@ -186,61 +192,6 @@ ul .topic {
 }
 
 
-
-
-@media (max-width:618px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    width: 100%;
-    height: auto;
-  }
-
-  .left {
-    margin-left: 4rem;
-    margin-bottom: 64px;
-  }
-
-  ul .topic {
-
-    height: 64px;
-    width: 327px;
-
-  }
-
-  ul .topic span{
-    width: 40px;
-    height: 40px
-
-  };
-
-  .title{
-    font-size: 20px;
-    font-weight: lighter;
-    
-  }
-
-
- 
-  .subtitle {
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 100%;
-  }
-
-  .subject {
-    font-size: 14px;
-    font-style: italic;
-    line-height: 150%;
-    margin-top: 24px;
-    font-family: 'Rubik Regular Italic';
-    color: #ABC1E1;
-  }
-
-
-}
 
 @media (max-width:450px) {
   .container {
@@ -272,9 +223,7 @@ ul .topic {
   ;
 
   .title {
-    width: 200px;
-    font-size: 20px;
-    font-weight: lighter;
+    color: #A729F5;
    
   }
 
@@ -284,7 +233,7 @@ ul .topic {
     font-size: 40px;
     font-weight: bold;
     line-height: 100%;
-     color: #F4F6FA;
+     color: #021741;
   }
 
   .subject {

@@ -1,7 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
-import "./answerCheck.css"
+import "./answerCheck.css";
+
 import data from "../assets/data.json";
+import Vision from "./mode";
 
 function Home() {
   const quiztypes = data.quizzes.map((obj, index) => {
@@ -36,6 +38,7 @@ function Home() {
 
   return (
     <>
+      <Vision />
       <div className="container ">
         <div className="row_">
           <div className="left">
