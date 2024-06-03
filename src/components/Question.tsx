@@ -17,14 +17,14 @@ function Question() {
   var [showbutton, setShowbutton] = useState(true);
   var [next, setNext] = useState(false);
   var [quizetype, setquizType] = useState(false);
-  var [ans, setAns] = useState("");
+
   var [clicked, setClicked] = useState(false);
   var [showans, setShowans] = useState(false);
   var [results, setresults] = useState(0);
   var [show, setshow] = useState(false);
   var [score, setscore] = useState(false);
   var [error, seterror] = useState("");
-  var [errorimg,seterrorimg] = useState(false);
+  var [errorimg, seterrorimg] = useState(false);
 
   // var [quizeslector,setquiselecto] = useState(0);
 
@@ -175,7 +175,7 @@ function Question() {
                               setShowbutton(false);
                               selectanser = choice;
                               setSelectAnswer(choice);
-                              setAns(obj3);
+                            
                               if (selectanser === choice) {
                                 setClicked(true);
                               }
@@ -284,7 +284,6 @@ function Question() {
                           setClicked(false);
                           setShowans(true);
                           setNext(true);
-                          
                         }}
                         className="subbtn_"
                       >
@@ -293,7 +292,12 @@ function Question() {
                     )}
 
                     <p id="error">
-                      <img src={errorimg?"./src/assets/icon-incorrect.svg":".."} alt="" />
+                      <img
+                        src={
+                          errorimg ? "./src/assets/icon-incorrect.svg" : ".."
+                        }
+                        alt=""
+                      />
                       {error}
                     </p>
                   </div>
