@@ -10,14 +10,12 @@ function Question() {
   var Data = data.quizzes;
 
   var [x, setx] = useState(0);
-  var [y, sety] = useState(2);
-
+  var [y, sety] = useState(0);
   var [progress, setProgress] = useState(30);
   var [selectanser, setSelectAnswer] = useState(-1);
   var [showbutton, setShowbutton] = useState(true);
   var [next, setNext] = useState(false);
   var [quizetype, setquizType] = useState(false);
-
   var [clicked, setClicked] = useState(false);
   var [showans, setShowans] = useState(false);
   var [results, setresults] = useState(0);
@@ -28,7 +26,7 @@ function Question() {
   var [answercolor, setAnswercolor] = useState(false);
   var [diasbled, setdisabled] = useState(false);
 
-  // var [quizeslector,setquiselecto] = useState(0);
+
 
   const quiztypes = data.quizzes.map((obj, index) => {
     return (

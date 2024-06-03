@@ -41,6 +41,11 @@ margin-left: 80px;
     color: #3B4D66;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.out {
+    margin-top: 50px;
+    font-size: 14px;
+color: #626C7F;
+}
 .quize-title span,.quiz-title span{
     width: 40px;
     height: 40px;
