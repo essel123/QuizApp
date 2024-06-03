@@ -25,6 +25,8 @@ function Question() {
   var [score, setscore] = useState(false);
   var [error, seterror] = useState("");
   var [errorimg, seterrorimg] = useState(false);
+  var [answercolor, setAnswercolor] = useState(false);
+  var [diasbled, setdisabled] = useState(false);
 
   // var [quizeslector,setquiselecto] = useState(0);
 
@@ -50,7 +52,7 @@ function Question() {
         }}
       >
         <span>
-          <img key={index} src={obj.icon} alt="i" />
+          <img key={index} src={obj.icon} alt="url error" />
         </span>
         <h3> {obj.title}</h3>
       </li>
@@ -158,12 +160,16 @@ function Question() {
                           <li
                             style={{
                               transition: "0.3s ease-in",
+                              pointerEvents: diasbled ? "none" : "auto",
+                              cursor: "pointer",
 
                               border:
                                 selectanser === choice
-                                  ? ` ${
-                                      clicked ? "1px solid #A729F5" : "none"
-                                    } `
+                                  ? answercolor
+                                    ? obj2.answer.match(obj3)
+                                      ? "1px solid #26D782"
+                                      : "1px solid #EE5454"
+                                    : ` ${clicked ? "1px solid #A729F5" : ""} `
                                   : "none",
                             }}
                             key={choice}
@@ -171,11 +177,12 @@ function Question() {
                             id="choice"
                             onClick={() => {
                               seterror("");
+                              setdisabled(true);
                               seterrorimg(false);
                               setShowbutton(false);
                               selectanser = choice;
                               setSelectAnswer(choice);
-                            
+
                               if (selectanser === choice) {
                                 setClicked(true);
                               }
@@ -196,11 +203,19 @@ function Question() {
 
                                 background:
                                   selectanser === choice
-                                    ? ` ${clicked ? "#A729F5" : ""} `
+                                    ? answercolor
+                                      ? obj2.answer.match(obj3)
+                                        ? "#26D782"
+                                        : "#EE5454"
+                                      : ` ${clicked ? "#A729F5" : ""} `
                                     : "",
                                 color:
                                   selectanser === choice
-                                    ? ` ${clicked ? "white" : ""} `
+                                    ? answercolor
+                                      ? obj2.answer.match(obj3)
+                                        ? "white"
+                                        : "white"
+                                      : ` ${clicked ? "white" : ""} `
                                     : "",
                               }}
                             >
@@ -212,19 +227,25 @@ function Question() {
                                 ? "C"
                                 : "D"}
                             </span>{" "}
-                            <h2> {obj3}</h2>
-                            <img
-                              className="icon"
-                              src={
-                                selectanser === choice
-                                  ? showans
-                                    ? obj3.match(obj2.answer)
-                                      ? "./src/assets/icon-correct.svg"
-                                      : "./src/assets/icon-incorrect.svg"
+                            <div className="options">
+                              <h2> {obj3}</h2>
+                            </div>
+                            <div className="alt">
+                              <img
+                                className="icon"
+                                src={
+                                  selectanser === choice
+                                    ? showans
+                                      ? obj3.match(obj2.answer)
+                                        ? "src/assets/icon-correct.svg"
+                                        : obj3.match(obj2.answer)
+                                        ? "src/assets/icon-correct.svg"
+                                        : "src/assets/icon-incorrect.svg"
+                                      : ""
                                     : ""
-                                  : ""
-                              }
-                            />
+                                }
+                              />
+                            </div>
                           </li>
                         </ul>
                       </>
@@ -238,6 +259,8 @@ function Question() {
                           setShowbutton(true);
                           setClicked(false);
                           setShowans(false);
+                          setAnswercolor(false);
+                          setdisabled(false);
                           setx((x) => x + 1);
                           if (progress < 300) {
                             setProgress(progress + 30);
@@ -248,6 +271,7 @@ function Question() {
                             setx(0);
                             setshow(true);
                             setscore(true);
+
                             sety((y) => y + 1);
                             if (y >= 3) {
                               setscore(true);
@@ -284,6 +308,7 @@ function Question() {
                           setClicked(false);
                           setShowans(true);
                           setNext(true);
+                          setAnswercolor(true);
                         }}
                         className="subbtn_"
                       >
