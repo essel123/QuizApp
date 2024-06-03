@@ -210,15 +210,20 @@ ul .topic {
 
   ul .topic {
 
-    height: 64px;
-    width: 327px;
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
 
   }
 
   ul .topic span {
-    width: 40px;
-    height: 40px
+    width: 35px;
+    height: 35px
   }
+    ul .topic span img{
+      width: 29px;
+      height: 29px
+    }
 
   ;
 
