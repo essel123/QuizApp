@@ -320,6 +320,9 @@ function Question() {
                           errorimg ? "./src/assets/icon-incorrect.svg" : ".."
                         }
                         alt=""
+                        style={{
+                          transition:'3s ease-in-out'
+                        }}
                       />
                       {error}
                     </p>
@@ -339,20 +342,22 @@ function Question() {
         question
       ) : (
         <>
-          <div className="mode-to-right">
-            <Vision />
-          </div>
-          <div className="vertical-spacer"></div>
-          <div className="container ">
-            <div className="row_">
-              <div className="left">
-                <h1 className="title"> Welcome to the</h1>
-                <h1 className="subtitle"> Frontend Quiz!</h1>
+          <div className="front-page">
+            <div className="mode-to-right">
+              <Vision />
+            </div>
+            <div className="vertical-spacer"></div>
+            <div className="container ">
+              <div className="row_">
+                <div className="left">
+                  <h1 className="title"> Welcome to the</h1>
+                  <h1 className="subtitle"> Frontend Quiz!</h1>
 
-                <p className="subject"> Pick a subject to get started.</p>
-              </div>
-              <div className="right">
-                <ul>{quiztypes}</ul>
+                  <p className="subject"> Pick a subject to get started.</p>
+                </div>
+                <div className="right">
+                  <ul>{quiztypes}</ul>
+                </div>
               </div>
             </div>
           </div>

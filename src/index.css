@@ -1,7 +1,9 @@
   * {
     color: #313E51;
+    transition: 5ms ease-in-out;
     
   }
+
   .mode-body
   {
     display: flex;
@@ -13,17 +15,11 @@
   }
      .right-icon {
        margin-left: 1rem;
+
      }
 
-  @media (min-width:1024px) {
-    .mode-body {
     
-        margin-right: 15rem;
-        margin-top: 20px;
-      }
-    
-  }
-
+ 
   .middle
   {
     width: 48px;
@@ -74,7 +70,6 @@ ul .topic {
     margin: 20px;
     border-radius: 24px;
     display: flex;
-   
     justify-content: left;
     align-items: center;
     padding: 20px;
@@ -87,16 +82,18 @@ ul .topic {
 
 @media (min-width:1024px) {
   .container {
-    
       display: flex;
       flex-direction: row;
       justify-content: center;
       position: relative;
       top: 10%;
-  
       width: 100%;
       height: auto;
     }
+        .mode-to-right {
+          margin-right: 10%;
+         
+        }
   
     .left {
       float: left;
@@ -151,15 +148,20 @@ ul .topic {
     width: 100%;
     height: auto;
   }
-
+    .mode-to-right {
+      margin-right: 10%;
+    }
+        .front-page {
+          padding-top: 5%;
+        }
   .left{
     margin-left: 4rem;
     margin-bottom: 64px;
   }
      ul .topic {
   
-       height: 80px;
-       width: 400px;
+       height: 60px;
+       width: 640px;
   
      }
 
@@ -199,12 +201,11 @@ ul .topic {
   }
 
   .left {
-    margin-left: 4rem;
+    margin-left: 2rem;
     margin-bottom: 64px;
   }
 
   ul .topic {
-
     height: 30px;
     width: 300px;
     font-size: 20px;

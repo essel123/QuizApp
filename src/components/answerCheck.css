@@ -100,8 +100,8 @@ color: #626C7F;
 .progress-bar{
     width: 300px;
     height: 16px;
-  background: #ffffff;
-  border-radius: 999px;
+    background: #ffffff;
+    border-radius: 999px;
 }
 
 .progress-fill{
@@ -112,6 +112,7 @@ color: #626C7F;
     align-items: center;
     font-size: 10px;
     color: white;
+    transition: 3s ease-in;
     
 }
 .topic
