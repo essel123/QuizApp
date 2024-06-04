@@ -26,8 +26,6 @@ function Question() {
   var [answercolor, setAnswercolor] = useState(false);
   var [diasbled, setdisabled] = useState(false);
 
-
-
   const quiztypes = data.quizzes.map((obj, index) => {
     return (
       <li
@@ -316,12 +314,10 @@ function Question() {
 
                     <p id="error">
                       <img
-                        src={
-                          errorimg ? "./src/assets/icon-incorrect.svg" : ".."
-                        }
+                        src={errorimg ? "./src/assets/icon-incorrect.svg" : ""}
                         alt=""
                         style={{
-                          transition:'3s ease-in-out'
+                          transition: "3s ease-in-out",
                         }}
                       />
                       {error}
