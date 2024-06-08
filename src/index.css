@@ -90,37 +90,33 @@ ul .topic {
       width: 100%;
       height: auto;
     }
-        .mode-to-right {
-          margin-right: 10%;
-         
-        }
+    .mode-to-right {
+      margin-right: 10%;
+  
+    }
   
     .left {
       float: left;
-      
-      
-     
     }
   
     .right {
       float: right;
       margin-left: 5rem;
     }
-  .title {
+  
+    .title {
       font-size: 56px;
       font-weight: 100;
       line-height: 100%;
     }
-
-    .subtitle
-    {
+  
+    .subtitle {
       font-size: 56px;
       font-weight: bold;
       line-height: 100%;
     }
-
-    .subject
-    {
+  
+    .subject {
       font-size: 16px;
       font-style: italic;
       line-height: 150%;
@@ -128,32 +124,86 @@ ul .topic {
       font-family: 'Rubik Regular Italic';
       color: #ABC1E1;
     }
-
-        ul .topic {
-    
-          height: 50px;
-          width: 550px;
-          
-        }
-
+  
+    ul .topic {
+  
+      height: 50px;
+      width: 550px;
+  
+    }
     
 }
 
-@media (max-width:1024px) {
+@media (min-width:1024px) {
   .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: auto;
+  }
 
+  .mode-to-right {
+    margin-right: 10%;
+
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+    margin-left: 5rem;
+  }
+
+  .title {
+    font-size: 56px;
+    font-weight: 100;
+    line-height: 100%;
+  }
+
+  .subtitle {
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 100%;
+  }
+
+  .subject {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 150%;
+    margin-top: 24px;
+    font-family: 'Rubik Regular Italic';
+    color: #ABC1E1;
+  }
+
+  ul .topic {
+
+    height: 50px;
+    width: 550px;
+
+  }
+
+}
+
+
+@media (max-width:768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     height: auto;
   }
     .mode-to-right {
       margin-right: 10%;
     }
-        .front-page {
-          padding-top: 5%;
-        }
+    .front-page {
+      padding-top: 5%;
+    }
   .left{
     margin-left: 4rem;
     margin-bottom: 64px;
@@ -187,8 +237,6 @@ ul .topic {
     color: #ABC1E1;
   }
 }
-
-
 
 @media (max-width:450px) {
   .container {

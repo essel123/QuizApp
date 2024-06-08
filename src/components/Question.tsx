@@ -155,14 +155,14 @@ function Question() {
                         <ul>
                           <li
                             style={{
-                              transition: "0.3s ease-in",
+                              transition: "0.1s ease-in",
                               pointerEvents: diasbled ? "none" : "auto",
                               cursor: "pointer",
 
                               border:
                                 selectanser === choice
                                   ? answercolor
-                                    ? obj2.answer.match(obj3)
+                                    ? obj3.toString() === obj2.answer.toString()
                                       ? "1px solid #26D782"
                                       : "1px solid #EE5454"
                                     : ` ${clicked ? "1px solid #A729F5" : ""} `
@@ -184,7 +184,9 @@ function Question() {
                               }
 
                               if (selectanser === choice) {
-                                if (obj3.match(obj2.answer)) {
+                                if (
+                                  obj3.toString() === obj2.answer.toString()
+                                ) {
                                   setresults(results + 1);
                                 }
                               }
@@ -195,12 +197,13 @@ function Question() {
                             {" "}
                             <span
                               style={{
-                                transition: "0.3s ease-in",
+                                transition: "0.1s ease-in",
 
                                 background:
                                   selectanser === choice
                                     ? answercolor
-                                      ? obj2.answer.match(obj3)
+                                      ? obj3.toString() ===
+                                        obj2.answer.toString()
                                         ? "#26D782"
                                         : "#EE5454"
                                       : ` ${clicked ? "#A729F5" : ""} `
@@ -208,7 +211,8 @@ function Question() {
                                 color:
                                   selectanser === choice
                                     ? answercolor
-                                      ? obj2.answer.match(obj3)
+                                      ? obj3.toString() ===
+                                        obj2.answer.toString()
                                         ? "white"
                                         : "white"
                                       : ` ${clicked ? "white" : ""} `
@@ -232,9 +236,11 @@ function Question() {
                                 src={
                                   selectanser === choice
                                     ? showans
-                                      ? obj3.match(obj2.answer)
+                                      ? obj3.toString() ===
+                                        obj2.answer.toString()
                                         ? "src/assets/icon-correct.svg"
-                                        : obj3.match(obj2.answer)
+                                        : obj3.toString() ===
+                                          obj2.answer.toString()
                                         ? "src/assets/icon-correct.svg"
                                         : "src/assets/icon-incorrect.svg"
                                       : ""
@@ -268,11 +274,11 @@ function Question() {
                             setshow(true);
                             setscore(true);
 
-                            sety((y) => y + 1);
-                            if (y >= 3) {
-                              setscore(true);
-                              sety(0);
-                            }
+                            // sety((y) => y + 1);
+                            // if (y >= 3) {
+                            //   setscore(true);
+                            //   sety(0);
+                            // }
                           }
                         }}
                         className="subbtn"
