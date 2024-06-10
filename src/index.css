@@ -1,5 +1,5 @@
   * {
-    color: #313E51;
+
     transition: 5ms ease-in-out;
     
   }
@@ -282,7 +282,7 @@ ul .topic {
     font-size: 40px;
     font-weight: bold;
     line-height: 100%;
-     color: #021741;
+    color: #021741;
   }
 
   .subject {
