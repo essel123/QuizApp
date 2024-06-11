@@ -62,11 +62,11 @@ function Question() {
             <>
               <div className="top">
                 <div className="quize-title">
-                  <span key={index}>
+                  <span key={obj1.icon}>
                     {" "}
                     <img src={obj1.icon} alt="" />
                   </span>{" "}
-                  <p>{obj1.title}</p>
+                  <p key={obj1.title}>{obj1.title}</p>
                 </div>
                 <div className="spacer"></div>
                 <div className="mode-changer">
@@ -85,11 +85,11 @@ function Question() {
                   <div className="right-content">
                     <div className="results">
                       <div className="quiz-title">
-                        <span key={index}>
+                        <span key={obj1.icon}>
                           {" "}
                           <img src={obj1.icon} alt="" />
                         </span>{" "}
-                        <p>{obj1.title}</p>
+                        <p key={obj1.title}>{obj1.title}</p>
                       </div>
                       <div className="score">
                         <h1>{show ? results : ""}</h1>
@@ -116,11 +116,11 @@ function Question() {
             <>
               <div className="top">
                 <div className="quize-title">
-                  <span key={index}>
+                  <span key={obj1.icon}>
                     {" "}
                     <img src={obj1.icon} alt="" />
                   </span>{" "}
-                  <p>{obj1.title}</p>
+                  <p key={obj1.title}>{obj1.title}</p>
                 </div>
                 <div className="spacer"></div>
                 <div className="mode-changer">
@@ -132,7 +132,7 @@ function Question() {
                   <p className="current-number">
                     Question {x + 1} of {obj1.questions.length}
                   </p>
-                  <h2 key={index_} className="Question">
+                  <h2 key={obj2.question} className="Question">
                     {" "}
                     {obj2.question}
                   </h2>
@@ -169,7 +169,7 @@ function Question() {
                                     : ` ${clicked ? "1px solid #A729F5" : ""} `
                                   : "none",
                             }}
-                            key={choice}
+                            key={obj3}
                             className={"choice"}
                             id="choice"
                             onClick={() => {
@@ -231,6 +231,7 @@ function Question() {
                             <div className="options">
                               <h2> {obj3}</h2>
                             </div>
+                            <div className="space"></div>
                             <div className="alt">
                               <img
                                 className="icon"

@@ -178,6 +178,13 @@ ul .choice span:hover{
     .spacer{
         width: 100%;
     }
+    .space{
+        width: 5%;
+    }
+         ul .choice .options {
+           
+             width: 100%;
+         }
     
    
     .right-side {
@@ -243,6 +250,13 @@ ul .choice span:hover{
 }
 
 @media (max-width:768px) {
+    .space {
+            width: 5%;
+        }
+    ul .choice .options {
+        font-size: 10px;
+        width: 100%;
+    }
     .mode-changer{
         margin-right: 5%;
     }
@@ -268,6 +282,7 @@ ul .choice span:hover{
     ul .choice {
         height: 56px;
         max-width: 640px;
+       
     }
     ul .choice span{
         width: 45px;
@@ -284,7 +299,7 @@ ul .choice span:hover{
             width: 29px;
             height: 29px;
         }
-
+        
     .right-side{
         margin-left: 3%;
     }
