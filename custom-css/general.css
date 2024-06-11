@@ -2,16 +2,25 @@
 {
     margin: 0;
     padding: 0;
- 
-    
-    
-  
+
 }
+
 
 body{
         background-color: rgba(215, 207, 207, 0.4);
+      
 }
 
+.Question{
+    font-family: 'Rubik-Medium.ttf';
+}
+
+.subbtn{
+    font-family: 'Rubik-Medium.ttf';
+}
+.out p{
+    font-family: 'Rubik-Medium.ttf';
+}
 
 
 

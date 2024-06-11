@@ -55,9 +55,17 @@ ul .topic {
     justify-content: left;
     align-items: center;
     padding: 20px;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Rubik-Medium.ttf';
     cursor: pointer;
+}
+
+.subtitle{
+  font-family: 'Rubik-Medium.ttf';
+}
+
+.subject{
+  font-family: 'Rubik-Italic.ttf';
 }
 
 
@@ -123,10 +131,8 @@ ul .topic {
   
     .subject {
       font-size: 16px;
-      font-style: italic;
       line-height: 150%;
       margin-top: 24px;
-      font-family: 'Rubik Regular Italic';
       color: #ABC1E1;
     }
   
@@ -134,9 +140,6 @@ ul .topic {
       height: 50px;
       width: 596px;
       border-radius: 24px;
-    
-     
-  
     }
     
 }
@@ -238,7 +241,6 @@ ul .topic {
 
   .subtitle {
     font-size: 56px;
-    font-weight: bold;
     line-height: 100%;
     margin-left: 5%;
   }
@@ -246,10 +248,8 @@ ul .topic {
   .subject {
     margin-left: 5%;
     font-size: 12px;
-    font-style: italic;
     line-height: 150%;
     margin-top: 24px;
-    font-family: 'Rubik Regular Italic';
     color: #ABC1E1;
   }
 }
@@ -277,14 +277,14 @@ ul .topic {
       
     }
 
-        .right-icon {
-          margin-left: 0.3rem;
-    
-        }
-    
-        .left-icon {
-          margin-right: 0.3rem;
-        }
+    .right-icon {
+      margin-left: 0.3rem;
+
+    }
+
+    .left-icon {
+      margin-right: 0.3rem;
+    }
 
   ul .topic span {
     width: 35px;
@@ -302,17 +302,14 @@ ul .topic {
   }
   .subtitle {
     font-size: 40px;
-    font-weight: bold;
     line-height: 100%;
     color: #021741;
   }
 
   .subject {
     font-size: 14px;
-    font-style: italic;
     line-height: 150%;
     margin-top: 24px;
-    font-family: 'Rubik Regular Italic';
     color: #ABC1E1;
   }
 

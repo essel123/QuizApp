@@ -55,6 +55,20 @@ align-items: center;
     height: 29px;
 }
 
+@font-face {
+    font-family: 'Rubik-Medium.ttf';
+    src: url(/public/fonts/static/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik-Italic.ttf';
+    src: url(/public/fonts/static/Rubik-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik-Regular.ttf';
+    src: url(/public/fonts/static/Rubik-Regular.ttf);
+}
 
 
 .subbtn ,.trybtn{
@@ -153,7 +167,7 @@ ul .choice {
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Rubik-Medium.ttf';
 
 }
 
