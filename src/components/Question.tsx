@@ -79,8 +79,10 @@ function Question() {
               <div>
                 <div className="result-page ">
                   <div className="left-content">
-                    <h1 className="title"> Quiz Completed</h1>
-                    <h1 className="subtitle"> You Scored...</h1>
+                    <Typography>
+                      <p className="complete"> Quiz Completed</p>
+                    </Typography>
+                    <h1 className="scored"> You Scored...</h1>
                   </div>
                   <div className="right-content">
                     <div className="results">

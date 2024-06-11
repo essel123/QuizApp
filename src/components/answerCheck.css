@@ -185,7 +185,6 @@ ul .choice span:hover{
         }
     .left-side {
             font-size: 14px;
-            margin-left: 10%;
             font-family: 'Franklin Gothic Medium';
         }
         .progress-bar
@@ -304,14 +303,7 @@ ul .choice span:hover{
     margin-left: 30%;
 
     }
-    .results
-    {
-    width: 640px;
-    height: 388px;
-    justify-content: center;
-    align-items: center;
-    }
-
+    
    .trybtn
    {
     width: 640px;
@@ -371,16 +363,29 @@ ul .choice span:hover{
 
     .results
     {
-        width: 400px;
-        height: 300px;
+        max-width: 327px;
+        max-height: 242px;
     }
     
     .trybtn{
-        width: 400px;
+        max-width: 327px;
     }
-         .spacer {
-             width: 100%;
-         }
+    .spacer {
+        width: 100%;
+    }
+
+    .complete{
+        font-size:28px ;
+    }
+    .scored{
+        font-size: 30px;
+    }
+
+       
+    .quize-title{
+        margin-left: 30%;
+    }
+
 
 }
 
