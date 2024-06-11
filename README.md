@@ -32,7 +32,7 @@ This is a solution to the [Frontend quiz app challenge on Frontend Mentor](https
 
 
 ### Links
-- Live Site URL: [https://quizeapp-essel-amalitech-project.netlify.app/]
+- Live Site URL: https://quizeapp-essel-amalitech-project.netlify.app/
 ## My process
 
 ### Built with
