@@ -277,6 +277,15 @@ ul .topic {
       
     }
 
+        .right-icon {
+          margin-left: 0.3rem;
+    
+        }
+    
+        .left-icon {
+          margin-right: 0.3rem;
+        }
+
   ul .topic span {
     width: 35px;
     height: 35px
