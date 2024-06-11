@@ -1,28 +1,36 @@
-function ModeChange() {
-  var test = document.getElementById("modechanger");
-  if (test) {
-    test.style.marginLeft = "18px";
-  }
-}
-function Mode() {
-  var test = document.getElementById("modechanger");
-  if (test) {
-    test.style.marginLeft = "20px";
-  }
-}
+import { useState } from "react";
+
 function Vision() {
+
+  var [check,setCheck] = useState(0);
   return (
     <>
       <div className="mode-body">
         <div className="left-icon">
-          <img src={"icon-sun-dark.svg"} alt="" />
+          <img
+            src={check === 0 ? "icon-sun-dark.svg" : "icon-sun-light.svg"}
+            alt=""
+          />
         </div>
-        <div className="middle" onClick={ModeChange} onDoubleClick={Mode}>
-          <div id="modechanger" className="circle"></div>
-        </div>
+        <label className="switch">
+          <input
+            onClick={() => {
+              if (check === 0) {
+                setCheck(check + 1);
+              } else {
+                setCheck(check - 1);
+              }
+            }}
+            type="checkbox"
+          />
+          <span className="slider round"></span>
+        </label>
 
         <div className="right-icon">
-          <img src={"icon-moon-dark.svg"} alt="" />
+          <img
+            src={check == 0 ? "icon-moon-dark.svg" : "icon-moon-light.svg"}
+            alt=""
+          />
         </div>
       </div>
     </>
