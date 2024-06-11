@@ -5,18 +5,11 @@
     justify-content: center;
     align-items: center;
   }
-  .left-icon{
-    margin-right: 1rem;
-  }
-.right-icon {
-  margin-left: 1rem;
+ 
 
-}
 
 .middle
 {
-  width: 48px;
-  height: 24px;
   background: #A729F5;
   border-radius: 999px;
   cursor: pointer;
@@ -30,8 +23,6 @@
 
   .circle
   {
-    width: 25px;
-    height: 25px;
     background: #ffffff;
     border-radius: 360px;
     cursor: pointer;
@@ -85,6 +76,29 @@ ul .topic {
       margin-right: 10%;
   
     }
+
+    .circle{
+      width: 25px;
+      height: 25px;
+    }
+
+    .middle{
+      width: 48px;
+        height: 24px;
+    }
+        .right-icon img,
+        .left-icon img {
+          width: 21px;
+          height: 21px;
+    
+        }
+        .right-icon {
+          margin-left: 0.5rem;
+    
+        }
+        .left-icon {
+          margin-right: 0.5rem;
+        }
   
     .left {
       float: left;
@@ -177,6 +191,30 @@ ul .topic {
     margin-left: 3%;
     color: #021741;
   }
+    .circle {
+      width: 24px;
+      height: 24px;
+    }
+  
+    .middle {
+      width: 48px;
+      height: 28px;
+    }
+         .right-icon img,
+         .left-icon img {
+           width: 24px;
+           height: 24px;
+    
+         }
+    
+         .right-icon {
+           margin-left: 0.5rem;
+    
+         }
+    
+         .left-icon {
+           margin-right: 0.5rem;
+         }
   
     .mode-to-right {
       margin-right: 5%;
@@ -222,6 +260,22 @@ ul .topic {
     max-width: 327px;
     border-radius: 10px;
   }
+
+    .circle {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .middle {
+      width: 32px;
+      height: 20px;
+    }
+
+    .right-icon img,.left-icon img{
+      width:16px;
+      height: 16px;
+      
+    }
 
   ul .topic span {
     width: 35px;
