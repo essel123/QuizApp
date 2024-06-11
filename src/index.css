@@ -74,7 +74,7 @@ ul .topic {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      color: #021741;
+      color: #313E51;
     }
     ul .topic span{
       height: 56px;
@@ -192,7 +192,7 @@ ul .topic {
 @media (max-width:768px) {
   .container{
     margin-left: 3%;
-    color: #021741;
+   color: #313E51;
   }
     .circle {
       width: 24px;
@@ -255,6 +255,9 @@ ul .topic {
 }
 
  @media (max-width:450px) {
+  .container{
+    color: #313E51;
+  }
   ul .topic {
     height: 25px;
     max-width: 327px;
@@ -303,7 +306,7 @@ ul .topic {
   .subtitle {
     font-size: 40px;
     line-height: 100%;
-    color: #021741;
+   
   }
 
   .subject {
