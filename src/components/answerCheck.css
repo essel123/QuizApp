@@ -338,6 +338,7 @@ ul .choice span:hover{
     ul .choice {
         height: 56px;
         width: 327px;
+        border-radius: 12px;
     }
     .left-side
     {
@@ -346,13 +347,15 @@ ul .choice span:hover{
 
     ul .choice span {
         width: 40px;
-        height: 40px
+        height: 40px;
+        
     }
     .subbtn,.subbtn_{
         width: 340px;
         height: 56px;
         margin-right: auto;
-        
+        border-radius: 12px;
+
     }
     .current-number {
         margin-top: 10px;
@@ -385,7 +388,7 @@ ul .choice span:hover{
 
        
     .quize-title{
-        margin-left: 30%;
+        margin-left: 10%;
     }
 
 
