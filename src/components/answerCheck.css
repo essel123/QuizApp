@@ -173,7 +173,7 @@ ul .choice span:hover{
            right: 0;
         }
     .quize-title {
-        margin-left: 8%;
+        margin-left: 10%;
     }
     .spacer{
         width: 100%;
@@ -181,10 +181,11 @@ ul .choice span:hover{
     
    
     .right-side {
-            margin-left: 20%;
+            margin-left: 10%;
         }
     .left-side {
             font-size: 14px;
+            margin-left: 10%;
             font-family: 'Franklin Gothic Medium';
         }
         .progress-bar
