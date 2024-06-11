@@ -5,6 +5,7 @@ import "../assets/icon-css.svg";
 import "./answerCheck.css";
 import { useState } from "react";
 import Vision from "./mode";
+import { Typography } from "@mui/material";
 
 function Question() {
   var Data = data.quizzes;
@@ -126,7 +127,7 @@ function Question() {
                   <Vision />
                 </div>
               </div>
-              <div className="question-body">
+              <div className="container">
                 <div className="left-side">
                   <p className="current-number">
                     Question {x + 1} of {obj1.questions.length}
@@ -352,7 +353,9 @@ function Question() {
             <div className="container ">
               <div className="row_">
                 <div className="left">
-                  <h1 className="title"> Welcome to the</h1>
+                  <Typography>
+                    <p className="title"> Welcome to the</p>
+                  </Typography>
                   <h1 className="subtitle"> Frontend Quiz!</h1>
 
                   <p className="subject"> Pick a subject to get started.</p>
