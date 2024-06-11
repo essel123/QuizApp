@@ -1,7 +1,5 @@
 import "../index.css";
-
 import data from "../assets/data.json";
-import "../assets/icon-css.svg";
 import "./answerCheck.css";
 import { useState } from "react";
 import Vision from "./mode";
@@ -241,11 +239,11 @@ function Question() {
                                     ? showans
                                       ? obj3.toString() ===
                                         obj2.answer.toString()
-                                        ? "src/assets/icon-correct.svg"
+                                        ? "icon-correct.svg"
                                         : obj3.toString() ===
                                           obj2.answer.toString()
-                                        ? "src/assets/icon-correct.svg"
-                                        : "src/assets/icon-incorrect.svg"
+                                        ? "icon-correct.svg"
+                                        : "icon-incorrect.svg"
                                       : ""
                                     : ""
                                 }
@@ -323,7 +321,7 @@ function Question() {
 
                     <p id="error">
                       <img
-                        src={errorimg ? "./src/assets/icon-incorrect.svg" : ""}
+                        src={errorimg ? "icon-incorrect.svg" : ""}
                         alt=""
                         style={{
                           transition: "3s ease-in-out",

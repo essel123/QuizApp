@@ -352,6 +352,7 @@ ul .choice span:hover{
         width: 340px;
         height: 56px;
         margin-right: auto;
+        
     }
     .current-number {
         margin-top: 10px;
@@ -369,6 +370,7 @@ ul .choice span:hover{
     
     .trybtn{
         max-width: 327px;
+        border-radius: 10px;
     }
     .spacer {
         width: 100%;

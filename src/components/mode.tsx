@@ -15,14 +15,14 @@ function Vision() {
     <>
       <div className="mode-body">
         <div className="left-icon">
-          <img src={"./src/assets/icon-sun-dark.svg"} alt="" />
+          <img src={"icon-sun-dark.svg"} alt="" />
         </div>
         <div className="middle" onClick={ModeChange} onDoubleClick={Mode}>
           <div id="modechanger" className="circle"></div>
         </div>
 
         <div className="right-icon">
-          <img src={"./src/assets/icon-moon-dark.svg"} alt="" />
+          <img src={"icon-moon-dark.svg"} alt="" />
         </div>
       </div>
     </>
