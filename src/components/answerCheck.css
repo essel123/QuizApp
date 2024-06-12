@@ -2,7 +2,7 @@
 :root{
     --background-color :#F4F6FA;
     --textcolor:#313E51;
-    --listbg : #F4F6FA;
+    --listbg : #FFFFFF;
     --shadow :2px 2px 10px rgba(173, 173, 173, 0.25);
     --progressfill :white;
     --qustionnumbercolor : #626C7F;
@@ -243,14 +243,14 @@ ul .choice span:hover{
         width: 100%;
     }
     
-   
-    .right-side {
-            margin-left: 10%;
-        }
-    .left-side {
-            font-size: 14px;
-            font-family: 'Franklin Gothic Medium';
-        }
+   .left-side{
+    margin-left: 5vh;
+    max-width: 465px;
+   }
+
+   .right-side{
+    max-width: 596px;
+   }
     .progress-bar
     {
         margin-top: 20vh;
@@ -258,12 +258,14 @@ ul .choice span:hover{
     .subbtn,.subbtn_{
         width: 520px;
         height: 80px;
+        margin-left: 10vh;
         
     }
 
     ul .choice {
-        max-width: 596px;
+        width: 550px;
         height: 65px;
+        margin-left: 10vh;
     }
     
     .results{
