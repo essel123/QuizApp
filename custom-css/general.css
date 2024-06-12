@@ -59,13 +59,10 @@ body{
 
     .page {
         background-image: var(--tablet);
-        background-position: center;
+        background-position: -10vh;
         background-repeat: no-repeat;
-        background-size: cover;
-         height: 50vh;
-        
-       
-
+        background-size: contain;
+        height: 100vh;
     }
 }
 
@@ -73,12 +70,10 @@ body{
 
     .page {
         background-image:var(--mobile);
-    
-        background-position:center;
-        
-       
-        background-size: cover;
-        height: 50vh;
+        background-position: 0.5vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100vh;
        
 
     }
