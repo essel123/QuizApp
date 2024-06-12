@@ -100,7 +100,9 @@ align-items: center;
  }
 
 
-
+.container{
+    margin-bottom: 5vh;
+}
 
 .scored {
     font-family: 'Rubik-Medium.ttf';
@@ -386,6 +388,8 @@ ul .choice span:hover{
         .trybtn
         {
             width: 640px;
+            border-radius: 12px;
+            height: 80px;
         }
         .spacer {
             width: 100%;
