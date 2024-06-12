@@ -28,8 +28,9 @@ function Question() {
   const quiztypes = data.quizzes.map((obj, index) => {
     return (
       <li
-        key={index}
+        key={obj.title}
         className="topic"
+        id="topic"
         onClick={() => {
           if (index === 0) {
             setquizType(true);
@@ -47,9 +48,9 @@ function Question() {
         }}
       >
         <span>
-          <img key={index} src={obj.icon} alt="url error" />
+          <img key={obj.icon} src={obj.icon} alt="url error" />
         </span>
-        <h3> {obj.title}</h3>
+        <h3 key={obj.title}> {obj.title}</h3>
       </li>
     );
   });
@@ -159,14 +160,13 @@ function Question() {
                               transition: "0.1s ease-in",
                               pointerEvents: diasbled ? "none" : "auto",
                               cursor: "pointer",
-
                               border:
                                 selectanser === choice
                                   ? answercolor
                                     ? obj3.toString() === obj2.answer.toString()
-                                      ? "1px solid #26D782"
-                                      : "1px solid #EE5454"
-                                    : ` ${clicked ? "1px solid #A729F5" : ""} `
+                                      ? "2px solid #26D782"
+                                      : "2px solid #EE5454"
+                                    : ` ${clicked ? "2px solid #A729F5" : ""} `
                                   : "none",
                             }}
                             key={obj3}

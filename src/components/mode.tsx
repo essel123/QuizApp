@@ -15,8 +15,12 @@ function Vision() {
         <label className="switch">
           <input
             onClick={() => {
+              var body = document.body;
+               body.classList.toggle("darkmode");
+             
               if (check === 0) {
                 setCheck(check + 1);
+               
               } else {
                 setCheck(check - 1);
               }

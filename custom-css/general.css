@@ -2,13 +2,27 @@
 {
     margin: 0;
     padding: 0;
+}
+:root {
+    --background-color: #F4F6FA;
+    --laptop: url("../public/pattern-background-desktop-light.svg");
+    --tablet:url("/public/pattern-background-tablet-light.svg");
+    --mobile:url("/public/pattern-background-mobile-light.svg");
+    
 
 }
-
-
 body{
-        background-color: rgba(215, 207, 207, 0.4);
-      
+    background-color: var(--background-color);
+    
+}
+
+.darkmode {
+    --background-color: #313E51;;
+    --laptop: url("../public/pattern-background-desktop-dark.svg");
+    --tablet: url("/public/pattern-background-tablet-dark.svg");
+    --mobile: url("/public/pattern-background-mobile-dark.svg");
+    transition: 0.3s ease-out;
+    
 }
 
 .Question{
@@ -32,7 +46,7 @@ body{
         
     
     .page {
-            background-image: url("../public/pattern-background-desktop-light.svg");
+            background-image: var(--laptop);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -44,7 +58,7 @@ body{
 @media (max-width:768px) {
 
     .page {
-        background-image: url("/public/pattern-background-tablet-light.svg");
+        background-image: var(--tablet);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -58,7 +72,7 @@ body{
 @media (max-width:450px) {
 
     .page {
-        background-image: url("/public/pattern-background-mobile-light.svg");
+        background-image:var(--mobile);
     
         background-position:center;
         
