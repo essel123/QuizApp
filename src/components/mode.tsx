@@ -1,8 +1,7 @@
 import { useState } from "react";
 
 function Vision() {
-
-  var [check,setCheck] = useState(0);
+  var [check, setCheck] = useState(0);
   return (
     <>
       <div className="mode-body">
@@ -16,11 +15,10 @@ function Vision() {
           <input
             onClick={() => {
               var body = document.body;
-               body.classList.toggle("darkmode");
-             
+              body.classList.toggle("darkmode");
+
               if (check === 0) {
                 setCheck(check + 1);
-               
               } else {
                 setCheck(check - 1);
               }

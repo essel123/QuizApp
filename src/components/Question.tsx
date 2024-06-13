@@ -24,6 +24,21 @@ function Question() {
   var [errorimg, seterrorimg] = useState(false);
   var [answercolor, setAnswercolor] = useState(false);
   var [diasbled, setdisabled] = useState(false);
+  var [mode, setmode] = useState(false);
+  var [select, setselect] = useState(-1);
+
+  const title = Data.map((Q, ind) => {
+    if (ind === select) {
+      return Q.title;
+    }
+  });
+  const icon = Data.map((Q, ind) => {
+    if (ind === select) {
+      return Q.icon;
+    }
+  });
+
+  console.log(title, icon);
 
   const quiztypes = data.quizzes.map((obj, index) => {
     return (
@@ -32,6 +47,8 @@ function Question() {
         className="topic"
         id="topic"
         onClick={() => {
+          setselect(index);
+          setmode(true);
           if (index === 0) {
             setquizType(true);
             sety(0);
@@ -61,19 +78,6 @@ function Question() {
         if (index_ === x) {
           return score ? (
             <>
-              <div className="top">
-                <div className="quize-title">
-                  <span key={obj1.icon}>
-                    {" "}
-                    <img src={obj1.icon} alt="" />
-                  </span>{" "}
-                  <p key={obj1.title}>{obj1.title}</p>
-                </div>
-                <div className="spacer"></div>
-                <div className="mode-changer">
-                  <Vision />
-                </div>
-              </div>
               <div className="vertical-spacer"></div>
               <div>
                 <div className="result-page ">
@@ -115,19 +119,6 @@ function Question() {
             </>
           ) : (
             <>
-              <div className="top">
-                <div className="quize-title">
-                  <span key={obj1.icon}>
-                    {" "}
-                    <img src={obj1.icon} alt="" />
-                  </span>{" "}
-                  <p key={obj1.title}>{obj1.title}</p>
-                </div>
-                <div className="spacer"></div>
-                <div className="mode-changer">
-                  <Vision />
-                </div>
-              </div>
               <div className="container">
                 <div className="left-side">
                   <p className="current-number">
@@ -232,19 +223,15 @@ function Question() {
                               <h2> {obj3}</h2>
                             </div>
                             <div className="space"></div>
-                            <div className="alt">
+                            <div className="icon-ans">
                               <img
                                 className="icon"
                                 src={
-                                  selectanser === choice
-                                    ? showans
-                                      ? obj3.toString() ===
-                                        obj2.answer.toString()
-                                        ? "icon-correct.svg"
-                                        : obj3.toString() ===
-                                          obj2.answer.toString()
-                                        ? "icon-correct.svg"
-                                        : "icon-incorrect.svg"
+                                  showans
+                                    ? obj2.answer.toString() === obj3.toString()
+                                      ? "icon-correct.svg"
+                                      : selectanser === choice
+                                      ? "icon-incorrect.svg"
                                       : ""
                                     : ""
                                 }
@@ -342,14 +329,29 @@ function Question() {
 
   return (
     <>
+      <div className="top">
+        {mode ? (
+          <div className="quize-title">
+            <span>
+              {" "}
+              <img src={icon[select]} alt="" />
+            </span>{" "}
+            <p>{title}</p>
+          </div>
+        ) : (
+          ""
+        )}
+        <div className="spacer"></div>
+        <div className="mode-changer">
+          <Vision />
+        </div>
+      </div>
       {quizetype ? (
         question
       ) : (
         <>
           <div className="front-page">
-            <div className="mode-to-right">
-              <Vision />
-            </div>
+            <div className="mode-to-right">{/* <Vision mode={0}/> */}</div>
             <div className="vertical-spacer"></div>
             <div className="container ">
               <div className="row_">
