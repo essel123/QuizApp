@@ -119,7 +119,7 @@ function Question() {
             </>
           ) : (
             <>
-              <div className="container">
+              <div className="container" id="container">
                 <div className="left-side">
                   <p className="current-number">
                     Question {x + 1} of {obj1.questions.length}

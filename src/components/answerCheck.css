@@ -424,14 +424,23 @@ ul .choice span:hover{
  }
 
 @media (max-width:450px) {
+
     ul .choice {
         height: 56px;
         width: 327px;
         border-radius: 12px;
+       
+    }
+    ul li{
+        font-size: 70px;
     }
     .left-side
     {
         width: 300px;
+        
+    }
+    .right-side{
+        margin-left: 3.5%;
     }
     ul .choice span {
         width: 40px;
@@ -440,7 +449,7 @@ ul .choice span:hover{
     }
     .subbtn,.subbtn_{
         width: 340px;
-        height: 56px;
+        height: 67px;
         margin-right: auto;
         border-radius: 12px;
     }
@@ -498,15 +507,20 @@ ul .choice span:hover{
     ul .choice{
         max-width: 300px;
     }
+         .right-side {
+            margin-left: 2%;
+         }
     .subbtn,.subbtn_{
         max-width: 320px;
+        height: 67px;
     }
 
-        .results {
-            max-width: 327px;
-            max-height: 242px;
-            margin-top: 5%;
-        }
+    .results {
+        max-width: 327px;
+        max-height: 242px;
+        margin-top: 5%;
+    }
+
 
     .result-page{
         margin-left: 5%;
@@ -516,14 +530,20 @@ ul .choice span:hover{
 @media (max-width:320px) {
 
     ul .choice {
-        max-width: 290px;
-        margin-left: -3.5%;
+        max-width: 270px;
+       
+    }
+
+    .right-side{
+        margin-left: 0.5%;
     }
 
     .subbtn,
     .subbtn_ {
-        max-width: 310px;
-        margin-left: -3.5%;
+        max-width: 280px;
+        margin-left: 5%;
+        height: 70px;
+       
     }
     .progress-bar{
         max-width: 280px;

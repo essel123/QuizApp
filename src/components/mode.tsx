@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function Vision() {
   var [check, setCheck] = useState(0);
+
   return (
     <>
       <div className="mode-body">
@@ -16,6 +17,21 @@ function Vision() {
             onClick={() => {
               var body = document.body;
               body.classList.toggle("darkmode");
+              var theme;
+              if (body.classList.contains("darkmode")) {
+                theme = "Dark";
+              } else {
+                theme = "Light";
+              }
+
+              localStorage.setItem("Theme", JSON.stringify(theme));
+              var getTheme = localStorage.getItem("Theme");
+
+              console.log(getTheme);
+
+              if (getTheme === "Dark") {
+                body.classList.toggle("darkmode");
+              }
 
               if (check === 0) {
                 setCheck(check + 1);
