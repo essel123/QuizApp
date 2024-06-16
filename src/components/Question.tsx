@@ -1,6 +1,7 @@
 import "../index.css";
 import data from "../assets/data.json";
 import "./answerCheck.css";
+import '../keyboard.tsx'
 import { useState } from "react";
 import Vision from "./mode";
 import { Typography } from "@mui/material";
@@ -147,8 +148,19 @@ function Question() {
                       <>
                         <ul>
                           <li
+                          onKeyDown={(event)=>{
+                           var ele = document.getElementById("choice");
+                           if (event.key === "Enter") {
+                            if (ele) {
+                              ele.style.border = "2px solid blue";
+                            }
+                           }
+
+                          }}
+                          
                             style={{
-                              transition: "0.1s ease-in",
+                             
+                              transition: " 0.1s ease-in",
                               pointerEvents: diasbled ? "none" : "auto",
                               cursor: "pointer",
                               border:
@@ -329,6 +341,11 @@ function Question() {
 
   return (
     <>
+    {/* <div className="test">
+      <button className="subbtn" id="btn">
+        Test
+      </button>
+    </div> */}
       <div className="top">
         {mode ? (
           <div className="quize-title">

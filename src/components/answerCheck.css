@@ -10,6 +10,18 @@
     
 }
 
+ul .choice:hover{
+   
+  /* box-shadow: 1px 1px 10px 5px rgba(173, 173, 173, 1); */
+  /* box-shadow: 1px 1px 5px 5px rgba(173, 173, 173,0.5);
+  -webkit-transition: .4s;
+  transition: 5s ease-in; */
+
+  border: 2px solid blue;
+}
+
+
+
 .darkmode{
     --background-color: #313E51;
     --textcolor: #FFFFFF;
@@ -225,47 +237,45 @@ ul .choice span:hover{
 
 
 @media (min-width:769px) {
-    .mode-changer {
-           position: relative;
-           right: 0;
-        }
+  
     .quize-title {
         margin-left: 5%;
     }
-    .spacer{
-        width: 100%;
-    }
-    .space{
-        width: 5%;
-    }
+    
+    
     ul .choice .options {
-    
+        font-size: 10px;
+      
         width: 100%;
     }
-    
-   .left-side{
-    margin-left: 5vh;
-    max-width: 465px;
-   }
-
-   .right-side{
-    max-width: 596px;
-   }
+    .left-side{
+       width: 500px;
+    }
+    .right-side{
+        margin-left: 10%;
+        max-width: 596px;
+    }
     .progress-bar
     {
         margin-top: 20vh;
     }
     .subbtn,.subbtn_{
         width: 520px;
-        height: 80px;
-        margin-left: 10vh;
-        
+        height: 65px;   
+        padding: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
     }
 
+    
+
     ul .choice {
-        width: 550px;
+        width: 500px;
         height: 65px;
-        margin-left: 10vh;
+       
+        
     }
     
     .results{
