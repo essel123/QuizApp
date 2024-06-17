@@ -512,6 +512,98 @@ ul .choice span:hover{
     
 }
 
+@media (max-width:390px) {
+
+    ul .choice {
+        height: 56px;
+        width: 327px;
+        border-radius: 12px;
+
+    }
+
+    ul li {
+        font-size: 70px;
+    }
+
+    .left-side {
+        width: 300px;
+
+    }
+
+    .right-side {
+        margin-left: -0.3%;
+    }
+
+    ul .choice span {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .subbtn,
+    .subbtn_ {
+        width: 340px;
+        height: 67px;
+        margin-right: auto;
+        border-radius: 12px;
+    }
+
+    .current-number {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .Question {
+        margin-bottom: 15px;
+    }
+
+    .results {
+        max-width: 350px;
+        max-height: 242px;
+        margin-top: 5%;
+    }
+
+    .complete {
+        font-size: 40px;
+    }
+
+    .scored {
+        font-size: 40px;
+    }
+
+    .trybtn {
+        max-width: 327px;
+        border-radius: 10px;
+        font-family: 'Rubik-Medium.ttf';
+    }
+
+    .spacer {
+        width: 100%;
+    }
+
+    .result-page {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .quize-title {
+        margin-left: 8%;
+
+    }
+
+    .quiz-title {
+        margin-top: 20px;
+    }
+
+    .score {
+        font-size: 50px;
+    }
+
+
+
+}
+
 @media (max-width:375px) {
 
     ul .choice{
