@@ -10,15 +10,15 @@
     
 }
 
-ul .choice:hover{
+/* ul .choice:hover{
    
-  /* box-shadow: 1px 1px 10px 5px rgba(173, 173, 173, 1); */
-  /* box-shadow: 1px 1px 5px 5px rgba(173, 173, 173,0.5);
+  box-shadow: 1px 1px 10px 5px rgba(173, 173, 173, 1);
+  box-shadow: 1px 1px 5px 5px rgba(173, 173, 173,0.5);
   -webkit-transition: .4s;
-  transition: 5s ease-in; */
+  transition: 5s ease-in;
 
   border: 2px solid blue;
-}
+} */
 
 
 
