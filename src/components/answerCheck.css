@@ -512,7 +512,7 @@ ul .choice span:hover{
     
 }
 
-@media (max-width:390px) {
+@media (max-width:410px) {
 
     ul .choice {
         height: 56px;
