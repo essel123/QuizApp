@@ -433,3 +433,23 @@ ul .topic {
 
 
 } 
+
+
+.copyright{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.copy h1{
+  font-size: 13px;
+  text-transform: capitalize;
+  font-family: 'Rubik-Italic.ttf';
+  color: var(--textcolor);
+  line-height: 150%;
+  letter-spacing: 2px;
+
+}
+
