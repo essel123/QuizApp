@@ -1,10 +1,13 @@
 import "../index.css";
 import data from "../assets/data.json";
-import "./answerCheck.css";
+import "../assets/answerCheck.css";
+import "../assets/general.css";
+import "../assets/animation.css";
 import "../keyboard.tsx";
 import { useState } from "react";
 import Vision from "./mode";
 import { Typography } from "@mui/material";
+import Confetti from "./confetti.tsx";
 
 function Question() {
   var Data = data.quizzes;
@@ -27,6 +30,7 @@ function Question() {
   var [diasbled, setdisabled] = useState(false);
   var [mode, setmode] = useState(false);
   var [select, setselect] = useState(-1);
+  var [celebration, setcelebration] = useState(false);
 
   const title = Data.map((Q, ind) => {
     if (ind === select) {
@@ -38,8 +42,6 @@ function Question() {
       return Q.icon;
     }
   });
-
-  console.log(title, icon);
 
   const quiztypes = data.quizzes.map((obj, index) => {
     return (
@@ -89,7 +91,16 @@ function Question() {
                     <h1 className="scored"> You Scored...</h1>
                   </div>
                   <div className="right-content">
+                    <div className="confette"></div>
                     <div className="results">
+                      {celebration && (
+                        <div style={{
+                          width:"100%",
+                          height:"100%"
+                        }}>
+                          <Confetti />
+                        </div>
+                      )}
                       <div className="quiz-title">
                         <span key={obj1.icon}>
                           {" "}
@@ -109,6 +120,7 @@ function Question() {
                         setquizType(false);
                         setscore(false);
                         setresults(0);
+                        setcelebration(false);
                       }}
                       className="trybtn"
                     >
@@ -271,6 +283,9 @@ function Question() {
                             setx(0);
                             setshow(true);
                             setscore(true);
+                            if (results >= 6) {
+                              setcelebration(true);
+                            }
 
                             // sety((y) => y + 1);
                             // if (y >= 3) {
@@ -343,6 +358,7 @@ function Question() {
         Test
       </button>
     </div> */}
+
       <div className="top">
         {mode ? (
           <div className="quize-title">
@@ -385,13 +401,13 @@ function Question() {
           </div>
         </>
       )}
-      <div className="copyright">
+      {/* <div className="copyright">
         <div className="copy">
           <h1>
             Copyright cc 2024 <span>Essel Apusiga Abraham</span>
           </h1>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

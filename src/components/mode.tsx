@@ -1,10 +1,14 @@
 import { useState } from "react";
 
+
 function Vision() {
   var [check, setCheck] = useState(0);
 
+ 
+
   return (
     <>
+     
       <div className="mode-body">
         <div className="left-icon">
           <img
@@ -15,6 +19,7 @@ function Vision() {
         <label className="switch">
           <input
             onClick={() => {
+            
               var body = document.body;
               body.classList.toggle("darkmode");
               var theme;
