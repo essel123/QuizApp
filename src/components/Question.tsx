@@ -3,6 +3,7 @@ import data from "../assets/data.json";
 import "../assets/answerCheck.css";
 import "../assets/general.css";
 import "../assets/animation.css";
+import clap from "../assets/clap.mp3";
 import "../keyboard.tsx";
 import { useState } from "react";
 import Vision from "./mode";
@@ -42,6 +43,11 @@ function Question() {
       return Q.icon;
     }
   });
+
+  const playSound = () => {
+    const audio = new Audio(clap);
+    audio.play();
+  };
 
   const quiztypes = data.quizzes.map((obj, index) => {
     return (
@@ -93,11 +99,9 @@ function Question() {
                   <div className="right-content">
                     <div className="confette"></div>
                     <div className="results">
+                     
                       {celebration && (
-                        <div style={{
-                          width:"100%",
-                          height:"100%"
-                        }}>
+                        <div style={{}}>
                           <Confetti />
                         </div>
                       )}
@@ -285,6 +289,7 @@ function Question() {
                             setscore(true);
                             if (results >= 6) {
                               setcelebration(true);
+                              playSound();
                             }
 
                             // sety((y) => y + 1);

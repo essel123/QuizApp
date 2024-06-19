@@ -722,6 +722,11 @@ ul .choice span:hover{
     width: 29px;
     height: 29px;
 } */
+.trybtn{
+    transition: 0.5s ease-in;
+}
+.trybtn:hover{
+    box-shadow: 0px 0px 100px 0px rgb(209, 255, 2);
 
-
+}
 
