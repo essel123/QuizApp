@@ -8,7 +8,7 @@
     
      return (
        <div>
-         {<Confetti />}
+         {<Confetti  />}
          {/* ... your other content ... */}
        </div>
      );

@@ -8,7 +8,8 @@ import "../keyboard.tsx";
 import { useState } from "react";
 import Vision from "./mode";
 import { Typography } from "@mui/material";
-import Confetti from "./confetti.tsx";
+// import Confetti from "./confetti.tsx";
+import Confetti from "react-confetti";
 
 function Question() {
   var Data = data.quizzes;
@@ -99,10 +100,18 @@ function Question() {
                   <div className="right-content">
                     <div className="confette"></div>
                     <div className="results">
-                     
                       {celebration && (
                         <div style={{}}>
-                          <Confetti />
+                          {/* <MyComponent /> */}
+                          <Confetti
+                           
+                            // colors={["yellow", "green", "blue", "brown"]}
+                            style={{
+                              width: "90%",
+                              marginLeft: "5%",
+                              height:"100%"
+                            }}
+                          />
                         </div>
                       )}
                       <div className="quiz-title">
