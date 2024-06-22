@@ -50,6 +50,8 @@ function Question() {
     audio.play();
   };
 
+  const audio = new Audio(clap);
+
   const quiztypes = data.quizzes.map((obj, index) => {
     return (
       <li
@@ -104,12 +106,11 @@ function Question() {
                         <div style={{}}>
                           {/* <MyComponent /> */}
                           <Confetti
-                           
                             // colors={["yellow", "green", "blue", "brown"]}
                             style={{
                               width: "90%",
                               marginLeft: "5%",
-                              height:"100%"
+                              height: "100%",
                             }}
                           />
                         </div>
@@ -134,6 +135,7 @@ function Question() {
                         setscore(false);
                         setresults(0);
                         setcelebration(false);
+                        audio.pause();
                       }}
                       className="trybtn"
                     >
@@ -173,14 +175,6 @@ function Question() {
                       <>
                         <ul>
                           <li
-                            onKeyDown={(event) => {
-                              var ele = document.getElementById("choice");
-                              if (event.key === "Enter") {
-                                if (ele) {
-                                  ele.style.border = "2px solid blue";
-                                }
-                              }
-                            }}
                             style={{
                               transition: " 0.1s ease-in",
                               pointerEvents: diasbled ? "none" : "auto",
@@ -296,9 +290,10 @@ function Question() {
                             setx(0);
                             setshow(true);
                             setscore(true);
+
                             if (results >= 6) {
                               setcelebration(true);
-                              playSound();
+                              audio.play();
                             }
 
                             // sety((y) => y + 1);
@@ -395,7 +390,6 @@ function Question() {
       ) : (
         <>
           <div className="front-page">
-            <div className="mode-to-right">{/* <Vision mode={0}/> */}</div>
             <div className="vertical-spacer"></div>
             <div className="container ">
               <div className="row_">
@@ -415,13 +409,6 @@ function Question() {
           </div>
         </>
       )}
-      {/* <div className="copyright">
-        <div className="copy">
-          <h1>
-            Copyright cc 2024 <span>Essel Apusiga Abraham</span>
-          </h1>
-        </div>
-      </div> */}
     </>
   );
 }

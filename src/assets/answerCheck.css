@@ -692,14 +692,6 @@ ul .choice span:hover{
     padding-bottom: 10px;
 }
 
-.mode-to-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
- 
-}
-
 .btn-control
 {
     display: flex;

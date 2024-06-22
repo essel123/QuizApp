@@ -163,20 +163,13 @@ ul .topic {
       height: 56px;
       width: 56px;
     }
-    .mode-to-right {
-      margin-right: 10%;
+    
+      .mode-changer{
+        margin-right: 20%;
+      }
+
+     
   
-    }
-
-    .circle{
-      width: 25px;
-      height: 25px;
-    }
-
-    .middle{
-      width: 48px;
-        height: 24px;
-    }
         .right-icon img,
         .left-icon img {
           width: 21px;
@@ -221,7 +214,8 @@ ul .topic {
   
     ul .topic {
       height: 50px;
-      width: 596px;
+      width: 400px;
+      
       border-radius: 24px;
     }
     
