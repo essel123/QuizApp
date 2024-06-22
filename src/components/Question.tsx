@@ -45,10 +45,10 @@ function Question() {
     }
   });
 
-  const playSound = () => {
-    const audio = new Audio(clap);
-    audio.play();
-  };
+  // const playSound = () => {
+  //   const audio = new Audio(clap);
+  //   audio.play();
+  // };
 
   const audio = new Audio(clap);
 
