@@ -10,15 +10,6 @@
     
 }
 
-/* ul .choice:hover{
-   
-  box-shadow: 1px 1px 10px 5px rgba(173, 173, 173, 1);
-  box-shadow: 1px 1px 5px 5px rgba(173, 173, 173,0.5);
-  -webkit-transition: .4s;
-  transition: 5s ease-in;
-
-  border: 2px solid blue;
-} */
 
 
 
@@ -189,7 +180,7 @@ align-items: center;
     font-weight: bold;
 }
 ul .choice span {
-    height: 56px;
+    height: 45px;
     width: 56px;
     background: #F4F6FA;
     border-radius: 5px;
@@ -199,6 +190,7 @@ ul .choice span {
     justify-content: center;
     font-size: 24px;
     color: #626C7F;
+   
 }
 .current-number{
     font-size: 12px;
@@ -236,13 +228,49 @@ ul .choice span:hover{
 } */
 
 
-@media (min-width:769px) {
-  
-    .quize-title {
-        margin-left: 5%;
+@media (min-width:1440px) {
+    .quize-title,.quiz-title {
+            margin-left: 10%;
+        }
+
+    .mode-changer{
+        margin-right: 10%;
     }
     
-    
+}
+
+@media (max-width:1440px) {
+    .quize-title,.quiz-title {
+        margin-left: 10%;
+    }
+
+    .mode-changer {
+        margin-right: 10%;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .quize-title,.quiz-title {
+        margin-left: 5%;
+    }
+
+    .mode-changer {
+        margin-right: 5%;
+    }
+
+
+    .front-page{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title,.subtitle{
+        font-size: 40px;
+    }
+}
+@media (min-width:769px) {
+  
     ul .choice .options {
         font-size: 10px;
       
@@ -268,14 +296,10 @@ ul .choice span:hover{
         justify-content: center;
        
     }
-
-    
-
     ul .choice {
         width: 500px;
         height: 65px;
-       
-        
+        padding: 8px;
     }
     
     .results{
@@ -307,16 +331,11 @@ ul .choice span:hover{
         position: relative;
         bottom: 10px;
     }
-    .mode-changer{
-        margin-right: 5%;
-    }
+    
 
     .score {
         font-size: 100px;
     }
-            
-                        
-    
 }
 
 @media (max-width:768px) {
@@ -484,7 +503,7 @@ ul .choice span:hover{
         font-size: 40px;
     }
     .trybtn{
-        max-width: 327px;
+        max-width: 350px;
         border-radius: 10px;
         font-family: 'Rubik-Medium.ttf';
     }
@@ -494,10 +513,10 @@ ul .choice span:hover{
     .result-page{
         display: flex;
         flex-direction: column;
-        margin-left: 10%;
+        margin-left: 15%;
     } 
     .quize-title{
-        margin-left: 10%;
+        margin-left: 15%;
         
     }
 
@@ -625,7 +644,12 @@ ul .choice span:hover{
 
 
     .result-page{
-        margin-left: 5%;
+        margin-left: 10%;
+    }
+
+    .quize-title
+    {
+        margin-left: 10%;
     }
     
 }
@@ -717,8 +741,5 @@ ul .choice span:hover{
 .trybtn{
     transition: 0.5s ease-in;
 }
-.trybtn:hover{
-    box-shadow: 0px 0px 100px 0px rgb(209, 255, 2);
 
-}
 

@@ -390,21 +390,16 @@ function Question() {
       ) : (
         <>
           <div className="front-page">
-            <div className="vertical-spacer"></div>
-            <div className="container ">
-              <div className="row_">
-                <div className="left">
-                  <Typography>
-                    <p className="title"> Welcome to the</p>
-                  </Typography>
-                  <h1 className="subtitle"> Frontend Quiz!</h1>
+            <div className="left">
+              <Typography>
+                <p className="title"> Welcome to the</p>
+              </Typography>
+              <h1 className="subtitle"> Frontend Quiz!</h1>
 
-                  <p className="subject"> Pick a subject to get started.</p>
-                </div>
-                <div className="right">
-                  <ul>{quiztypes}</ul>
-                </div>
-              </div>
+              <p className="subject"> Pick a subject to get started.</p>
+            </div>
+            <div className="right">
+              <ul>{quiztypes}</ul>
             </div>
           </div>
         </>
