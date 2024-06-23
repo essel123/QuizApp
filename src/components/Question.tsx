@@ -100,7 +100,6 @@ function Question() {
                     <h1 className="scored"> You Scored...</h1>
                   </div>
                   <div className="right-content">
-                    <div className="confette"></div>
                     <div className="results">
                       {celebration && (
                         <div style={{}}>

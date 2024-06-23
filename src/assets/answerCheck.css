@@ -301,15 +301,6 @@ ul .choice span:hover{
         height: 65px;
         padding: 8px;
     }
-    
-    .results{
-        max-width: 596px;
-        max-height: 350px;
-    }
-
-    .trybtn{
-        width: 596px;
-    }
     .left-content{
         margin-left: 5rem;
     }
@@ -323,6 +314,14 @@ ul .choice span:hover{
         width: 596px;
         height: 386px;
         margin-right: 5rem;
+    }
+    .result-page{
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+    }
+    .trybtn {
+            width: 596px;
     }
     .spacer{
         width: 100%;
@@ -403,7 +402,8 @@ ul .choice span:hover{
         .result-page{
             display: flex;
             flex-direction: column;
-            margin-left: 5%;
+            margin-left: 12%;
+            
         }
         .results{
             width: 640px;
@@ -514,6 +514,7 @@ ul .choice span:hover{
         display: flex;
         flex-direction: column;
         margin-left: 15%;
+        margin-right: 15%;
     } 
     .quize-title{
         margin-left: 15%;
