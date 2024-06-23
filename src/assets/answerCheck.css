@@ -269,7 +269,7 @@ ul .choice span:hover{
         font-size: 40px;
     }
 }
-@media (min-width:769px) {
+@media (min-width:800px) {
   
     ul .choice .options {
         font-size: 10px;
@@ -337,7 +337,7 @@ ul .choice span:hover{
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:799px) {
     .space {
             width: 5%;
         }

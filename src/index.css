@@ -137,7 +137,7 @@ ul .topic {
 }
 
 
-@media (min-width:769px) {
+@media (min-width:800px) {
   .top {
       position: relative;
       top: -10px;
@@ -281,7 +281,7 @@ ul .topic {
 } */
 
 
-@media (max-width:768px) {
+@media (max-width:799px) {
   .top{
     position: relative;
     top: 5px;
@@ -332,10 +332,6 @@ ul .topic {
          .left-icon {
            margin-right: 0.5rem;
          }
-  
-    .mode-to-right {
-      margin-right: 5%;
-    }
   
         .front-page {
           color: var(--textcolor);
@@ -444,7 +440,7 @@ ul .topic {
    
   }
   .subtitle {
-    font-size: 38px;
+    font-size: 100px;
     line-height: 100%;
    
   }
