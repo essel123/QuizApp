@@ -76,18 +76,7 @@ input:focus+.slider {
  
 
 
-.middle
-{
-  background: #A729F5;
-  border-radius: 999px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  padding: 5px;
-  cursor: pointer;
-  
-}
+
 
   .circle
   {

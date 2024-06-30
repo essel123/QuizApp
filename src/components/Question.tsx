@@ -1,6 +1,6 @@
 import "../index.css";
 import data from "../assets/data.json";
-import "../assets/answerCheck.css";
+import "../assets/styles.css";
 import "../assets/general.css";
 import "../assets/animation.css";
 import clap from "../assets/clap.mp3";
@@ -30,7 +30,7 @@ function Question() {
   var [errorimg, seterrorimg] = useState(false);
   var [answercolor, setAnswercolor] = useState(false);
   var [diasbled, setdisabled] = useState(false);
-  var [mode, setmode] = useState(false);
+  var [showquiztitle, setshowquiztitle] = useState(false);
   var [select, setselect] = useState(-1);
   var [celebration, setcelebration] = useState(false);
 
@@ -60,7 +60,7 @@ function Question() {
         id="topic"
         onClick={() => {
           setselect(index);
-          setmode(true);
+          setshowquiztitle(true);
           if (index === 0) {
             setquizType(true);
             sety(0);
@@ -86,6 +86,9 @@ function Question() {
 
   var question = Data.map((obj1, index) => {
     return obj1.questions.map((obj2, index_) => {
+      // window.localStorage.setItem("Quiz", JSON.stringify(index));
+
+      // var getQuiz = window.localStorage.getItem("Quiz");
       if (index === y) {
         if (index_ === x) {
           return score ? (
@@ -134,6 +137,7 @@ function Question() {
                         setscore(false);
                         setresults(0);
                         setcelebration(false);
+                        setshowquiztitle(false);
                         audio.pause();
                       }}
                       className="trybtn"
@@ -209,8 +213,6 @@ function Question() {
                                   setresults(results + 1);
                                 }
                               }
-
-                              // var e = document.getElementById("choice")
                             }}
                           >
                             {" "}
@@ -294,12 +296,6 @@ function Question() {
                               setcelebration(true);
                               audio.play();
                             }
-
-                            // sety((y) => y + 1);
-                            // if (y >= 3) {
-                            //   setscore(true);
-                            //   sety(0);
-                            // }
                           }
                         }}
                         className="subbtn"
@@ -319,15 +315,6 @@ function Question() {
                     ) : (
                       <button
                         onClick={() => {
-                          // var answerGeter = Data.map((ans, index) => {
-                          //   if (index === y) {
-                          //     return ans.questions.map((ans1, ansindex) => {
-                          //       if (ansindex === x) {
-                          //         return ans1.answer;
-                          //       }
-                          //     });
-                          //   }
-                          // });
                           setClicked(false);
                           setShowans(true);
                           setNext(true);
@@ -361,14 +348,8 @@ function Question() {
 
   return (
     <>
-      {/* <div className="test">
-      <button className="subbtn" id="btn">
-        Test
-      </button>
-    </div> */}
-
       <div className="top">
-        {mode ? (
+        {showquiztitle ? (
           <div className="quize-title">
             <span>
               {" "}

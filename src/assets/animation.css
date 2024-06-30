@@ -12,12 +12,6 @@
 }
 
 .front-page,.result-page,.container {
-    /* animation-name: movefromleft;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1; */
-
     animation: movefromleft 0.5s ease-out 0s 1 normal;
     animation: name duration timing-function  delay iteration-count direction fill-mode;
 }

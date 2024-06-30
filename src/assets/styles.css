@@ -345,14 +345,7 @@ ul .choice span:hover{
         font-size: 10px;
         width: 100%;
     }
-    .mode-changer{
-        margin-right: 5%;
-    }
-
-    .quize-title{
-        margin-left: 10%;
-    }
-                              
+                            
    
     .subbtn,.subbtn_ {
         width: 660px;  
@@ -399,10 +392,19 @@ ul .choice span:hover{
             margin-left: 6%;
             margin-bottom: 5%;
         }
+        .mode-changer {
+            margin-right: 6.2%;
+        }
+
+        .quize-title {
+            margin-left: 7%;
+        }
         .result-page{
             display: flex;
             flex-direction: column;
-            margin-left: 12%;
+            position: relative;
+            transform: translate(8.2%);
+          
             
         }
         .results{
@@ -510,22 +512,24 @@ ul .choice span:hover{
     .spacer {
         width: 100%;
     }
-    .result-page{
-        display: flex;
-        flex-direction: column;
-        margin-left: 15%;
-        margin-right: 15%;
-    } 
     .quize-title{
-        margin-left: 15%;
+        margin-left: 10%;
         
     }
-
     .quiz-title{
         margin-top: 20px;
     }
     .score{
         font-size: 50px;
+    }
+
+    .result-page{
+        margin-left: 0;
+        position: relative;
+        /* left: 5%;
+        right: 5%; */
+        transform: translate(12%,5%);
+
     }
 
     
@@ -601,10 +605,13 @@ ul .choice span:hover{
         width: 100%;
     }
 
-    .result-page {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10%;
+    .result-page{
+        margin-left: 0;
+        position: relative;
+        /* left: 5%;
+        right: 5%; */
+        transform: translate(0%);
+
     }
 
     .quize-title {
@@ -625,6 +632,9 @@ ul .choice span:hover{
 }
 
 @media (max-width:375px) {
+    .mode-changer{
+        margin-right: 0;
+    }
 
     ul .choice{
         max-width: 300px;
@@ -655,6 +665,8 @@ ul .choice span:hover{
     
 }
 @media (max-width:320px) {
+
+    
 
     ul .choice {
         max-width: 270px;
