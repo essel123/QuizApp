@@ -8,7 +8,7 @@ Welcome to the Frontend Quiz App, a user-friendly React JS application built wit
 - [Site Snapshot](#Preview)
 - [Links](#links)
 - [Built with](#built-with)
-- [Features](#features-of-the App)
+- [Features](#features-of-the-App)
 - [Installation&Configuration](#Installation-and-Configuration)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
