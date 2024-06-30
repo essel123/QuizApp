@@ -5,28 +5,20 @@
 Welcome to the Frontend Quiz App, a user-friendly React JS application built with TypeScript. This app allows users to take a quiz, view results, and replay with a different category. Designed with a light and dark mode toggler, responsive layout, and interactive feedback. 
 
 ## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Features](#features of the App)
-  - [Installation&Configuration](#Installation and Configuration)
-  
+- [Site Snapshot](#Preview)
+- [Links](#links)
+- [Built with](#built-with)
+- [Features](#features-of-the App)
+- [Installation&Configuration](#Installation-and-Configuration)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
 
 
 ### The challenge
 
 
-### Screenshot
+### Site Snapshot
 
 ![](./public/preview.png)
 
@@ -52,15 +44,16 @@ Welcome to the Frontend Quiz App, a user-friendly React JS application built wit
 - Responsive layout for various screen sizes
 - Hover and focus states for interactive elements
 
-### Installation and Configuration
+### Installation&Configuration
 
 1. Ensure Node is installed on your machine.
-2. Run npm run dev in your terminal to view the site locally.
-3. Configure your project with vite@latest.
+2. Configure your project with vite@latest.
+3. Run npm run dev in your terminal to view the site locally.
+
 
 ### Useful resources
 
-- [React official site](https://reactjs.org/) -  This is the library I used for the work
+- [React official site](https://reactjs.org/) -  This is the Js library I used for the work
 - [w3schools tutorials for HTML](https://www.w3schools.com/html/) - You can learn HTML here for free
 - [w3schools tutorials for CSS](https://www.w3schools.com/css/) - You can learn CSS here for free too
 
