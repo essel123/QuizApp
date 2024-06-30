@@ -528,7 +528,7 @@ ul .choice span:hover{
         position: relative;
         /* left: 5%;
         right: 5%; */
-        transform: translate(12%,5%);
+        transform: translate(12%);
 
     }
 
@@ -584,7 +584,7 @@ ul .choice span:hover{
     .results {
         max-width: 350px;
         max-height: 242px;
-        margin-top: 5%;
+       
     }
 
     .complete {
