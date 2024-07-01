@@ -106,9 +106,7 @@ function Question() {
                     <div className="results">
                       {celebration && (
                         <div style={{}}>
-                          {/* <MyComponent /> */}
                           <Confetti
-                            // colors={["yellow", "green", "blue", "brown"]}
                             style={{
                               width: "90%",
                               marginLeft: "5%",

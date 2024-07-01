@@ -270,7 +270,7 @@ ul .choice span:hover{
     }
 }
 @media (min-width:800px) {
-  
+    
     ul .choice .options {
         font-size: 10px;
       
@@ -338,6 +338,11 @@ ul .choice span:hover{
 }
 
 @media (max-width:799px) {
+    .quize-title{
+        margin-left: 0;
+
+    }
+    
     .space {
             width: 5%;
         }
@@ -434,6 +439,28 @@ ul .choice span:hover{
         }
 }
 
+@media (max-width:768px) {
+    .quize-title {
+            margin-left: 8.5%;
+    
+        }
+    
+}
+@media (max-width:712px) {
+    .right-side{
+        margin-left: -0.6%;
+    }
+    .subbtn,.subbtn_{
+        margin-right: -4%;
+    }
+    .left-side{
+        margin-left: 2%;
+    }
+    .quize-title{
+        margin-left: 5%;
+    }
+    
+}
  @media (max-width:700px) {
 
      .subbtn,
@@ -444,17 +471,64 @@ ul .choice span:hover{
 
  }
 
- @media (max-width:600px) {
+ 
+@media (max-width:600px) {
+    
+
+    .subbtn,
+    .subbtn_ {
+        width: 570px;
+        margin-left: 1%;
+    }
+
+    .mode-changer {
+        margin-right: 2.5%;
+    }
+
+    .quize-title {
+        margin-left: 3%;
+    }
+
+    .right-side {
+        margin-left: -3%;
+    }
+    .Question,.current-number,.progress-bar{
+        margin-left: -6%;
+
+    }
+
+}
+
+ @media (max-width:550px) {
 
      .subbtn,
      .subbtn_ {
-         width: 535px;
-         margin-left: 2%;
+         width: 510px;
+         margin-left: -4%;
      }
+
+     .right-side{
+        margin-left: -2%;
+     }
+
+    .left-side
+    {
+        margin-left: 6.5%;
+    }
+        .quize-title{
+            margin-left: 4%;
+        }
+
+        .mode-changer{
+            margin-right: 2%;
+        }
 
  }
 
 @media (max-width:450px) {
+    .mode-changer{
+        margin-right: 6%;
+    }
 
     ul .choice {
         height: 56px;
@@ -468,6 +542,7 @@ ul .choice span:hover{
     .left-side
     {
         width: 300px;
+        margin-left: 11%;
         
     }
     .right-side{
@@ -483,6 +558,8 @@ ul .choice span:hover{
         height: 67px;
         margin-right: auto;
         border-radius: 12px;
+        margin-left: 4%;
+        
     }
     .current-number {
         margin-top: 10px;
@@ -526,8 +603,6 @@ ul .choice span:hover{
     .result-page{
         margin-left: 0;
         position: relative;
-        /* left: 5%;
-        right: 5%; */
         transform: translate(12%);
 
     }
@@ -536,7 +611,7 @@ ul .choice span:hover{
     
 }
 
-@media (max-width:410px) {
+@media (max-width:420px) {
 
     ul .choice {
         height: 56px;
@@ -551,11 +626,12 @@ ul .choice span:hover{
 
     .left-side {
         width: 300px;
+        margin-left: 10%;
 
     }
 
     .right-side {
-        margin-left: -0.3%;
+        margin-left: 0.5%;
     }
 
     ul .choice span {
@@ -570,11 +646,13 @@ ul .choice span:hover{
         height: 67px;
         margin-right: auto;
         border-radius: 12px;
+        margin-left: 3%;
     }
 
     .current-number {
         margin-top: 10px;
         margin-bottom: 15px;
+       
     }
 
     .Question {
@@ -608,8 +686,6 @@ ul .choice span:hover{
     .result-page{
         margin-left: 0;
         position: relative;
-        /* left: 5%;
-        right: 5%; */
         transform: translate(0%);
 
     }
@@ -626,14 +702,18 @@ ul .choice span:hover{
     .score {
         font-size: 50px;
     }
+    .mode-changer{
+        margin-right: 8%;
+    }
 
 
 
 }
 
+
 @media (max-width:375px) {
     .mode-changer{
-        margin-right: 0;
+        margin-right: 8%;
     }
 
     ul .choice{
@@ -660,7 +740,27 @@ ul .choice span:hover{
 
     .quize-title
     {
-        margin-left: 10%;
+        margin-left: 8%;
+    }
+    
+}
+
+@media (max-width:360px) {
+    .quize-title{
+        margin-left: 8%;
+    }
+    .right-side{
+        margin-left: -1%;
+    }
+    .mode-changer{
+        margin-right: 5%;
+    }
+    .left-side{
+        margin-left: 8%;
+        width: 250px;
+    }
+    .quize-title{
+        margin-left: 5%;
     }
     
 }
@@ -674,8 +774,9 @@ ul .choice span:hover{
     }
 
     .right-side{
-        margin-left: 0.5%;
+        margin-left: -2%;
     }
+   
 
     .subbtn,
     .subbtn_ {
