@@ -8,12 +8,10 @@ import "../keyboard.tsx";
 import { useState } from "react";
 import Vision from "./mode";
 import { Typography } from "@mui/material";
-// import Confetti from "./confetti.tsx";
 import Confetti from "react-confetti";
 
 function Question() {
   var Data = data.quizzes;
-
   var [x, setx] = useState(0);
   var [y, sety] = useState(0);
   var [progress, setProgress] = useState(30);
@@ -33,7 +31,7 @@ function Question() {
   var [showquiztitle, setshowquiztitle] = useState(false);
   var [select, setselect] = useState(-1);
   var [celebration, setcelebration] = useState(false);
-
+  var [resultpage,showresultspagemode] = useState(false);
   const title = Data.map((Q, ind) => {
     if (ind === select) {
       return Q.title;
@@ -51,6 +49,7 @@ function Question() {
   // };
 
   const audio = new Audio(clap);
+
 
   const quiztypes = data.quizzes.map((obj, index) => {
     return (
@@ -86,9 +85,6 @@ function Question() {
 
   var question = Data.map((obj1, index) => {
     return obj1.questions.map((obj2, index_) => {
-      // window.localStorage.setItem("Quiz", JSON.stringify(index));
-
-      // var getQuiz = window.localStorage.getItem("Quiz");
       if (index === y) {
         if (index_ === x) {
           return score ? (
@@ -97,9 +93,9 @@ function Question() {
               <div>
                 <div className="result-page ">
                   <div className="left-content">
-                    <Typography>
+                    
                       <p className="complete"> Quiz Completed</p>
-                    </Typography>
+                    
                     <h1 className="scored"> You Scored...</h1>
                   </div>
                   <div className="right-content">
@@ -136,6 +132,7 @@ function Question() {
                         setresults(0);
                         setcelebration(false);
                         setshowquiztitle(false);
+                        showresultspagemode(false)
                         audio.pause();
                       }}
                       className="trybtn"
@@ -289,6 +286,7 @@ function Question() {
                             setx(0);
                             setshow(true);
                             setscore(true);
+                            showresultspagemode(true)
 
                             if (results >= 6) {
                               setcelebration(true);
@@ -359,7 +357,7 @@ function Question() {
           ""
         )}
         <div className="spacer"></div>
-        <div className="mode-changer">
+        <div className= {resultpage?"mode":"mode-changer"}>
           <Vision />
         </div>
       </div>
@@ -367,7 +365,7 @@ function Question() {
         question
       ) : (
         <>
-          <div className="front-page">
+        <div className= "front-page">
             <div className="left">
               <Typography>
                 <p className="title"> Welcome to the</p>

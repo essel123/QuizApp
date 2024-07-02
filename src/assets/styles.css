@@ -227,6 +227,18 @@ ul .choice span:hover{
     width: 100%;
 } */
 
+.complete,.scored{
+    font-size: 56px;
+    margin-left: 12.5%;
+
+}
+.results,.trybtn{
+    margin-left: -12%;
+}
+.mode{
+    margin-right: 3%;
+}
+
 
 @media (min-width:1440px) {
     .quize-title,.quiz-title {
@@ -236,9 +248,75 @@ ul .choice span:hover{
     .mode-changer{
         margin-right: 10%;
     }
-    
+   
 }
+@media (min-width:800px) {
 
+   
+
+
+    ul .choice .options {
+        font-size: 10px;
+
+        width: 100%;
+    }
+
+    .left-side {
+        width: 500px;
+    }
+
+    .right-side {
+        margin-left: 10%;
+        max-width: 596px;
+    }
+
+    .progress-bar {
+        margin-top: 20vh;
+    }
+
+    .subbtn,
+    .subbtn_ {
+        width: 520px;
+        height: 65px;
+        padding: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    ul .choice {
+        width: 500px;
+        height: 65px;
+        padding: 8px;
+    }
+
+
+    .results {
+        width: 596px;
+        height: 386px;
+    
+
+    }
+
+    .trybtn {
+        width: 596px;
+    }
+
+    .spacer {
+        width: 100%;
+    }
+
+    .top {
+        position: relative;
+        bottom: 10px;
+    }
+
+
+    .score {
+        font-size: 100px;
+    }
+}
 @media (max-width:1440px) {
     .quize-title,.quiz-title {
         margin-left: 10%;
@@ -248,8 +326,46 @@ ul .choice span:hover{
         margin-right: 10%;
     }
 
-}
+    .complete {
+        margin-left: 15%;
+    }
 
+    .scored{
+        margin-left: 15%;
+    }
+    .mode{
+        margin-right: 10%;
+    }
+
+    .result-page,.quiz-title,.quize-title,.mode-changer{
+        margin-top: -2%;
+    }
+
+        .results ,.trybtn{
+            max-width: 500px;
+            margin-left: -25%;
+    
+        }
+
+    
+
+}
+@media (max-width:1280px) {
+    .complete,.scored{
+        margin-left: 15%;
+    }
+
+    .results,.trybtn{
+        margin-left: -10%;
+    }
+
+    .mode{
+        margin-right: 4%;
+    }
+   
+    
+    
+}
 @media (max-width:1024px) {
     .quize-title,.quiz-title {
         margin-left: 5%;
@@ -268,74 +384,40 @@ ul .choice span:hover{
     .title,.subtitle{
         font-size: 40px;
     }
-}
-@media (min-width:800px) {
-    
-    ul .choice .options {
-        font-size: 10px;
-      
-        width: 100%;
-    }
-    .left-side{
-       width: 500px;
-    }
-    .right-side{
-        margin-left: 10%;
-        max-width: 596px;
-    }
-    .progress-bar
-    {
-        margin-top: 20vh;
-    }
-    .subbtn,.subbtn_{
-        width: 520px;
-        height: 65px;   
-        padding: 37px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       
-    }
-    ul .choice {
-        width: 500px;
-        height: 65px;
-        padding: 8px;
-    }
-    .left-content{
-        margin-left: 5rem;
-    }
-    .complete {
-        font-size: 64px;
-    }
-    .scored {
-        font-size: 64px;
-    }
-    .results{
-        width: 596px;
-        height: 386px;
-        margin-right: 5rem;
-    }
-    .result-page{
-        padding-left: 5%;
-        padding-right: 5%;
-        box-sizing: border-box;
-    }
-    .trybtn {
-            width: 596px;
-    }
-    .spacer{
-        width: 100%;
-    }
-    .top{
-        position: relative;
-        bottom: 10px;
-    }
-    
 
-    .score {
-        font-size: 100px;
+    .results,.trybtn{
+        margin-left: -5%;
     }
+    .mode{
+        margin-right: 2%;
+    }
+
+    .complete,.scored{
+        margin-left: 10%;
+        font-size: 40px;
+       
+
+    }
+
+
 }
+
+@media (max-width:900px) {
+    .complete,.scored{
+        font-size: 30px;
+        margin-left: 12%;
+    }
+
+    .results,.trybtn{
+        margin-left: -5%;
+        
+    }
+    .mode{
+        margin-right: 5%;
+    }
+    
+}
+
 
 @media (max-width:799px) {
     .quize-title{
@@ -403,32 +485,30 @@ ul .choice span:hover{
 
         .quize-title {
             margin-left: 7%;
+            margin-top: 1%;
         }
         .result-page{
             display: flex;
             flex-direction: column;
-            position: relative;
-            transform: translate(8.2%);
-          
             
         }
         .results{
             width: 640px;
             height: 388px;
+            margin-left: 12%;
         }
 
-        .complete {
-            font-size: 56px;
-        }
-
-        .scored {
-            font-size: 56px;
-        }
+        
         .trybtn
         {
             width: 640px;
             border-radius: 12px;
             height: 80px;
+            margin-left: 12%;
+        }
+
+        .mode{
+            margin-right: 12%;
         }
         .spacer {
             width: 100%;
@@ -436,6 +516,11 @@ ul .choice span:hover{
         
         .score{
             font-size:120px;
+        }
+
+        .complete,.scored{
+            margin-left: 8%;
+            font-size: 64px;
         }
 }
 
@@ -465,20 +550,20 @@ ul .choice span:hover{
 
      .subbtn,
      .subbtn_ {
-        width: 596px;
-        margin-left: 2%;
+        width: 650px;
+        margin-left: -5%;
      }
 
  }
 
  
-@media (max-width:600px) {
+@media (max-width:640px) {
     
 
     .subbtn,
     .subbtn_ {
-        width: 570px;
-        margin-left: 1%;
+        width: 610px;
+        margin-left: -4.5%;
     }
 
     .mode-changer {
@@ -492,10 +577,15 @@ ul .choice span:hover{
     .right-side {
         margin-left: -3%;
     }
+
+    .left-side{
+        margin-left: 5%;
+    }
     .Question,.current-number,.progress-bar{
         margin-left: -6%;
 
     }
+
 
 }
 
@@ -515,19 +605,39 @@ ul .choice span:hover{
     {
         margin-left: 6.5%;
     }
-        .quize-title{
-            margin-left: 4%;
-        }
+    .quize-title{
+        margin-left: 4%;
+    }
 
-        .mode-changer{
-            margin-right: 2%;
-        }
+    .mode-changer{
+        margin-right: 2%;
+    }
+    .complete,.scored{
+        margin-left: 5%;
+    }
+    .results,.trybtn{
+        width: 460px;
+        margin-left: 5%;
+    }
 
  }
 
 @media (max-width:450px) {
+    .quize-title span{
+        width: 30px;
+        height: 30px;
+    }
+
+    .quize-title span img {
+        width: 20px;
+        height: 30px;
+    }
     .mode-changer{
         margin-right: 6%;
+    }
+
+    .mode{
+        margin-right: 11%;
     }
 
     ul .choice {
@@ -559,7 +669,6 @@ ul .choice span:hover{
         margin-right: auto;
         border-radius: 12px;
         margin-left: 4%;
-        
     }
     .current-number {
         margin-top: 10px;
@@ -570,19 +679,30 @@ ul .choice span:hover{
     }
     .results
     {
-        max-width: 350px;
+        max-width: 320px;
         max-height: 242px;
         margin-top: 5%;
+        
     }
     .complete{
         font-size: 40px;
+        
     }
 
-    .scored{
-        font-size: 40px;
+    
+    .results,.trybtn{
+        margin-left: 10%;
+       }
+
+   
+
+    .scored,.complete{
+        font-size: 35px;
+        margin-left: 9%;
     }
+
     .trybtn{
-        max-width: 350px;
+        max-width: 320px;
         border-radius: 10px;
         font-family: 'Rubik-Medium.ttf';
     }
@@ -600,15 +720,6 @@ ul .choice span:hover{
         font-size: 50px;
     }
 
-    .result-page{
-        margin-left: 0;
-        position: relative;
-        transform: translate(12%);
-
-    }
-
-    
-    
 }
 
 @media (max-width:420px) {
@@ -649,6 +760,8 @@ ul .choice span:hover{
         margin-left: 3%;
     }
 
+    
+
     .current-number {
         margin-top: 10px;
         margin-bottom: 15px;
@@ -662,7 +775,18 @@ ul .choice span:hover{
     .results {
         max-width: 350px;
         max-height: 242px;
+        margin-left: 6%;
        
+    }
+
+
+    .scored,
+    .complete {
+        font-size: 40px;
+       
+    }
+    .mode{
+        margin-right: 5%;
     }
 
     .complete {
@@ -674,21 +798,16 @@ ul .choice span:hover{
     }
 
     .trybtn {
-        max-width: 327px;
+        max-width: 350px;
         border-radius: 10px;
         font-family: 'Rubik-Medium.ttf';
+        margin-left: 6%;
     }
 
     .spacer {
         width: 100%;
     }
 
-    .result-page{
-        margin-left: 0;
-        position: relative;
-        transform: translate(0%);
-
-    }
 
     .quize-title {
         margin-left: 8%;
@@ -715,6 +834,9 @@ ul .choice span:hover{
     .mode-changer{
         margin-right: 8%;
     }
+    .left{
+        margin-left: 3.5%;
+       }
 
     ul .choice{
         max-width: 300px;
@@ -730,14 +852,25 @@ ul .choice span:hover{
     .results {
         max-width: 327px;
         max-height: 242px;
-        margin-top: 5%;
+      
+        margin-left: 5%;
     }
 
+    .trybtn,.complete,.scored{
+        margin-left: 6%;
+        
 
-    .result-page{
-        margin-left: 10%;
     }
 
+    .complete,.scored{
+        font-size: 35px;
+    }
+    .trybtn{
+        width: 327px;
+    }
+        .mode{
+            margin-right: 5%;
+        }
     .quize-title
     {
         margin-left: 8%;
@@ -762,6 +895,11 @@ ul .choice span:hover{
     .quize-title{
         margin-left: 5%;
     }
+
+    .trybtn{
+        margin-left: 5%;
+        width: 330px;
+    }
     
 }
 @media (max-width:320px) {
@@ -773,8 +911,17 @@ ul .choice span:hover{
        
     }
 
+    .mode-changer{
+        margin-right: 8%;
+        margin-bottom: 5%;
+    }
+
     .right-side{
         margin-left: -1.5%;
+    }
+
+    .left{
+        margin-left: 4%;
     }
    
 
@@ -800,6 +947,16 @@ ul .choice span:hover{
     .trybtn{
         max-width: 280px;
     }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .subtitle{
+        font-size: 30px;
+    }
+
+
 
 }
 
@@ -847,13 +1004,3 @@ ul .choice span:hover{
     align-items: center;
     justify-content: center;
 }
-/* 
-.btn-control p img{
-    width: 29px;
-    height: 29px;
-} */
-.trybtn{
-    transition: 0.5s ease-in;
-}
-
-

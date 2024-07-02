@@ -227,51 +227,6 @@ ul .topic {
     
 }
 
-/* @media (min-width:1024px) {
-    .container{
-      color: #021741;
-
-    }
-
-  .mode-to-right {
-    margin-right: 10%;
-
-  }
-
-  
-
-  .title {
-    font-size: 64px;
-    font-weight: 100;
-    line-height: 100%;
-  }
-
-  .subtitle {
-    font-size: 64px;
-    font-weight: bold;
-    line-height: 100%;
-  }
-
-  .subject {
-    font-size: 16px;
-    font-style: italic;
-    line-height: 150%;
-    margin-top: 24px;
-    font-family: 'Rubik Regular Italic';
-    color: #ABC1E1;
-  }
-
-  ul .topic {
-
-    height: 50px;
-    max-width: 596px;
-    padding: 10px;
-
-  }
-
-} */
-
-
 @media (max-width:799px) {
   .top{
     position: relative;
@@ -299,36 +254,29 @@ ul .topic {
     margin-left: 3%;
     color: var(--textcolor);
   }
-.circle {
-  width: 24px;
-  height: 24px;
-}
-  
-    .middle {
-      width: 48px;
-      height: 28px;
+
+
+      .right-icon img,
+      .left-icon img {
+        width: 24px;
+        height: 24px;
+
+      }
+
+      .right-icon {
+        margin-left: 0.5rem;
+
+      }
+
+      .left-icon {
+        margin-right: 0.5rem;
+      }
+
+    .front-page {
+      color: var(--textcolor);
+      margin-left: 5%;
+      margin-right: 5%;
     }
-         .right-icon img,
-         .left-icon img {
-           width: 24px;
-           height: 24px;
-    
-         }
-    
-         .right-icon {
-           margin-left: 0.5rem;
-    
-         }
-    
-         .left-icon {
-           margin-right: 0.5rem;
-         }
-  
-        .front-page {
-          color: var(--textcolor);
-          margin-left: 5%;
-          margin-right: 5%;
-        }
   
     ul .topic {
       height: 40px;
@@ -392,15 +340,7 @@ ul .topic {
    
   }
 
-    .circle {
-      width: 20px;
-      height: 20px;
-    }
-  
-    .middle {
-      width: 32px;
-      height: 20px;
-    }
+   
 
     .right-icon img,.left-icon img{
       width:16px;
