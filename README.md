@@ -49,6 +49,7 @@ Welcome to the Frontend Quiz App, a user-friendly React JS application built wit
 1. Ensure Node is installed on your machine.
 2. Configure your project with vite@latest.
 3. Run npm run dev in your terminal to view the site locally.
+4. A simple way to view the site locally is by opening the dist folder in this project and locate index.html , open with live sever on your vscode or any prefered editor of your choice or just run the active file (index.html)
 
 ### Useful resources
 
