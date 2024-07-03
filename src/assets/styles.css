@@ -11,8 +11,6 @@
 }
 
 
-
-
 .darkmode{
     --background-color: #313E51;
     --textcolor: #FFFFFF;
@@ -21,6 +19,7 @@
     --progressfill: #3B4D66;
     --qustionnumbercolor: #ABC1E1;
     --out: #ABC1E1;
+    --shadow: 0 0 3px rgba(255, 255, 255, 0.25);
 }
 
 .top{
@@ -210,6 +209,28 @@ ul .choice {
     font-size: 12px;
     cursor: pointer;
     font-family: 'Rubik-Medium.ttf';
+   
+
+}
+
+ul .choice:hover{
+    box-shadow: none;
+}
+
+.subbtn:hover {
+    background-color: #7317ac;
+    transition:background-color 0.6s ease-in-out;
+
+}
+.trybtn:hover {
+    background-color: #7317ac;
+    transition: background-color 0.3s ease-in-out;
+
+}
+.subbtn_:hover {
+    /* background: #7317ac; */
+    opacity: 70%;
+    transition: opacity 0.6s ease-in-out;
 
 }
 
@@ -222,23 +243,32 @@ ul .choice span:hover{
     align-items: start;
     width: 100%;
 }
-/* 
-.left-side, .right-side{
-    width: 100%;
-} */
+
 
 .complete,.scored{
     font-size: 56px;
     margin-left: 12.5%;
 
 }
+
+
 .results,.trybtn{
     margin-left: -12%;
 }
+
 .mode{
     margin-right: 3%;
 }
+/* 
+.quize-title span:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.5s ease-in;
+} */
 
+.quize-title span img:hover{
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    transition: filter 0.5s ease-in;
+}
 
 @media (min-width:1440px) {
     .quize-title,.quiz-title {
@@ -251,10 +281,6 @@ ul .choice span:hover{
    
 }
 @media (min-width:800px) {
-
-   
-
-
     ul .choice .options {
         font-size: 10px;
 
@@ -293,7 +319,7 @@ ul .choice span:hover{
 
 
     .results {
-        width: 596px;
+        max-width: 596px;
         height: 386px;
     
 
@@ -418,12 +444,8 @@ ul .choice span:hover{
     
 }
 
-
 @media (max-width:799px) {
-    .quize-title{
-        margin-left: 0;
-
-    }
+    
     
     .space {
             width: 5%;
@@ -501,7 +523,7 @@ ul .choice span:hover{
         
         .trybtn
         {
-            width: 640px;
+            width: 500px;
             border-radius: 12px;
             height: 80px;
             margin-left: 12%;
@@ -529,6 +551,7 @@ ul .choice span:hover{
             margin-left: 8.5%;
     
         }
+
     
 }
 @media (max-width:712px) {
@@ -556,7 +579,6 @@ ul .choice span:hover{
 
  }
 
- 
 @media (max-width:640px) {
     
 

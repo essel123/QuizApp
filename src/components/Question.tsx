@@ -4,53 +4,71 @@ import "../assets/styles.css";
 import "../assets/general.css";
 import "../assets/animation.css";
 import clap from "../assets/clap.mp3";
-import "../keyboard.tsx";
 import { useState } from "react";
 import Vision from "./mode";
 import { Typography } from "@mui/material";
 import Confetti from "react-confetti";
 
 function Question() {
+  //assigning and passing the json file
   var Data = data.quizzes;
+  //to keep track of questions in a subject
   var [x, setx] = useState(0);
+  // to keep track of subject category
   var [y, sety] = useState(0);
+  //progress  value checker
   var [progress, setProgress] = useState(30);
+  //to make a selection of four choices
   var [selectanser, setSelectAnswer] = useState(-1);
+  // keeping track of which button to be displayed under choices for a question, submit or next
   var [showbutton, setShowbutton] = useState(true);
+  // to change question after answering another
   var [next, setNext] = useState(false);
+  //to choose which subject to take quiz
   var [quizetype, setquizType] = useState(false);
+  // to check if clicked and don't alllow further selection
   var [clicked, setClicked] = useState(false);
+  // show answer after submiting
   var [showans, setShowans] = useState(false);
+  //results value tracker
   var [results, setresults] = useState(0);
+  //keep track of which page to display at at time, subject page or quiz page or results page
   var [show, setshow] = useState(false);
+  // display results after completing the subject quiz
   var [score, setscore] = useState(false);
+  //error on trying to submit without making a selection
   var [error, seterror] = useState("");
   var [errorimg, seterrorimg] = useState(false);
+  //for shw
   var [answercolor, setAnswercolor] = useState(false);
+  // keeping track of a disabledlike button for submission of answer
   var [diasbled, setdisabled] = useState(false);
+  // keeping track of where to show quiz title
   var [showquiztitle, setshowquiztitle] = useState(false);
+  //to make a selection of four choices
   var [select, setselect] = useState(-1);
+  // show celebration after getting more than 5
   var [celebration, setcelebration] = useState(false);
-  var [resultpage,showresultspagemode] = useState(false);
+  //redefining css for the mode toggler
+  var [resultpage, showresultspagemode] = useState(false);
+
+  //getting subject title
   const title = Data.map((Q, ind) => {
     if (ind === select) {
       return Q.title;
     }
   });
+
+  // getting subject icon
+
   const icon = Data.map((Q, ind) => {
     if (ind === select) {
       return Q.icon;
     }
   });
-
-  // const playSound = () => {
-  //   const audio = new Audio(clap);
-  //   audio.play();
-  // };
-
+  // jubilation audio
   const audio = new Audio(clap);
-
-
+  // subject titles  and it's display for frontpage, monitoring onclick for a quiz to start
   const quiztypes = data.quizzes.map((obj, index) => {
     return (
       <li
@@ -93,15 +111,14 @@ function Question() {
               <div>
                 <div className="result-page ">
                   <div className="left-content">
-                    
-                      <p className="complete"> Quiz Completed</p>
-                    
+                    <p className="complete"> Quiz Completed</p>
+
                     <h1 className="scored"> You Scored...</h1>
                   </div>
                   <div className="right-content">
                     <div className="results">
                       {celebration && (
-                        <div style={{}}>
+                        <div>
                           <Confetti
                             style={{
                               width: "90%",
@@ -132,7 +149,7 @@ function Question() {
                         setresults(0);
                         setcelebration(false);
                         setshowquiztitle(false);
-                        showresultspagemode(false)
+                        showresultspagemode(false);
                         audio.pause();
                       }}
                       className="trybtn"
@@ -199,9 +216,6 @@ function Question() {
 
                               if (selectanser === choice) {
                                 setClicked(true);
-                              }
-
-                              if (selectanser === choice) {
                                 if (
                                   obj3.toString() === obj2.answer.toString()
                                 ) {
@@ -213,9 +227,9 @@ function Question() {
                             {" "}
                             <span
                               style={{
-                                transition: "0.1s ease-in",
+                                transition: "backgroundColor 0.1s ease-in",
 
-                                background:
+                                backgroundColor:
                                   selectanser === choice
                                     ? answercolor
                                       ? obj3.toString() ===
@@ -286,7 +300,7 @@ function Question() {
                             setx(0);
                             setshow(true);
                             setscore(true);
-                            showresultspagemode(true)
+                            showresultspagemode(true);
 
                             if (results >= 6) {
                               setcelebration(true);
@@ -345,7 +359,7 @@ function Question() {
   return (
     <>
       <div className="top">
-        {showquiztitle ? (
+        {showquiztitle && (
           <div className="quize-title">
             <span>
               {" "}
@@ -353,11 +367,9 @@ function Question() {
             </span>{" "}
             <p>{title}</p>
           </div>
-        ) : (
-          ""
         )}
         <div className="spacer"></div>
-        <div className= {resultpage?"mode":"mode-changer"}>
+        <div className={resultpage ? "mode" : "mode-changer"}>
           <Vision />
         </div>
       </div>
@@ -365,7 +377,7 @@ function Question() {
         question
       ) : (
         <>
-        <div className= "front-page">
+          <div className="front-page">
             <div className="left">
               <Typography>
                 <p className="title"> Welcome to the</p>

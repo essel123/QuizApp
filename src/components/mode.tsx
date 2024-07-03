@@ -1,13 +1,11 @@
 import { useState } from "react";
 
 function Vision() {
+  //icons color toggler for light and darkmode
   var [check, setCheck] = useState(0);
-  // var [modecheck,setmodecheck] =  useState("true");
-
-  // var mode = document.getElementById("mode");
-
+  
  
-
+  // local storage for setting mode of the site weather light or dark
   let isDarkMode = localStorage.getItem("darkMode") === "true";
 
   if (isDarkMode) {
